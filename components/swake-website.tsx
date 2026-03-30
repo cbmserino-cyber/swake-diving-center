@@ -1,3 +1,21 @@
+export function SwakeWebsite() {
+  const reviews = [
+    {
+      quote:
+        'I did my first freedive with Swake instructors and it was an amazing experience. They are very professional and easy to dive with.',
+      author: 'Romain Torres',
+    },
+    {
+      quote:
+        'Swake Freedivers is great, especially for first-timers. My coach was patient and guided me well. The reef was clear, vibrant, and beautiful underwater.',
+      author: 'Joshua Waban',
+    },
+    {
+      quote:
+        'Had a great time diving with them. Very accommodating and patient throughout the session.',
+      author: 'Allaine',
+    },
+  ];
 const reviews = [
   {
     quote:
