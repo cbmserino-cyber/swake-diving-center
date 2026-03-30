@@ -236,7 +236,7 @@ export function SwakeWebsite() {
         </p>
         <h2 className="mt-2 text-3xl font-semibold">Raw clips and real progress</h2>
         <p className="mt-3 max-w-2xl text-neutral-700">
-          Use this section for short video clips or stills from actual intro
+          section for short video clips or stills from actual intro
           sessions, training dives, and guided fundives.
         </p>
         <div className="mt-8 grid gap-4 md:grid-cols-4">
