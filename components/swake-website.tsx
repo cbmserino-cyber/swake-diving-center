@@ -2,65 +2,65 @@ export function SwakeWebsite() {
   const reviews = [
     {
       quote:
-        'I did my first freedive with Swake instructors and it was an amazing experience. They are very professional and easy to dive with.',
-      author: 'Romain Torres',
+        "I did my first freedive with Swake instructors and it was an amazing experience. They are very professional and easy to dive with.",
+      author: "Romain Torres",
     },
     {
       quote:
-        'Swake Freedivers is great, especially for first-timers. My coach was patient and guided me well. The reef was clear, vibrant, and beautiful underwater.',
-      author: 'Joshua Waban',
+        "Swake Freedivers is great, especially for first-timers. My coach was patient and guided me well. The reef was clear, vibrant, and beautiful underwater.",
+      author: "Joshua Waban",
     },
     {
       quote:
-        'Had a great time diving with them. Very accommodating and patient throughout the session.',
-      author: 'Allaine',
+        "Had a great time diving with them. Very accommodating and patient throughout the session.",
+      author: "Allaine",
     },
   ];
 
   const services = [
     {
-      title: 'Intro to Freediving',
-      price: 'From ₱2,500',
+      title: "Intro to Freediving",
+      price: "From ₱2,500",
       description:
-        'For first-timers and beginners. Learn the basics of breathing, equalization, and your first open water dives — guided step by step.',
-      cta: 'Book Intro',
+        "For first-timers and beginners. Learn the basics of breathing, equalization, and your first open water dives — guided step by step.",
+      cta: "Book Intro",
     },
     {
-      title: 'Fundive with Guide',
-      price: '₱1,500 / person',
+      title: "Fundive with Guide",
+      price: "₱1,500 / person",
       description:
-        'Relaxed guided sessions for certified or experienced divers, with site selection based on conditions and optional photo coverage.',
-      cta: 'Book Fundive',
+        "Relaxed guided sessions for certified or experienced divers, with site selection based on conditions and optional photo coverage.",
+      cta: "Book Fundive",
     },
     {
-      title: 'Freediving Courses',
-      price: 'Wave 1 & Wave 2',
+      title: "Freediving Courses",
+      price: "Wave 1 & Wave 2",
       description:
-        'Structured Molchanovs training for those looking to progress safely, properly, and at a steady pace.',
-      cta: 'View Courses',
+        "Structured Molchanovs training for those looking to progress safely, properly, and at a steady pace.",
+      cta: "View Courses",
     },
   ];
 
   const faqs = [
     {
-      q: 'Do I need experience?',
-      a: 'No. Our intro sessions are designed for first-timers and beginners.',
+      q: "Do I need experience?",
+      a: "No. Our intro sessions are designed for first-timers and beginners.",
     },
     {
-      q: 'Is it safe?',
-      a: 'Safety is central to how we teach and guide every session.',
+      q: "Is it safe?",
+      a: "Safety is central to how we teach and guide every session.",
     },
     {
-      q: 'What should I bring?',
-      a: 'Swimwear, towel, water, and a relaxed mindset. We will guide you through the rest.',
+      q: "What should I bring?",
+      a: "Swimwear, towel, water, and a relaxed mindset. We will guide you through the rest.",
     },
   ];
 
   const gallery = [
-    'Raw intro and training sessions',
-    'Beginner-friendly coaching flow',
-    'Guided open water dives',
-    'Quiet progress underwater',
+    "Raw intro and training sessions",
+    "Beginner-friendly coaching flow",
+    "Guided open water dives",
+    "Quiet progress underwater",
   ];
 
   return (
@@ -212,12 +212,12 @@ export function SwakeWebsite() {
               <h2 className="mt-2 text-3xl font-semibold">A calm, safety-first approach</h2>
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 {[
-                  'Safety-first approach',
-                  'Small, guided sessions',
-                  'Local instructors',
-                  'Calm and unhurried learning',
-                  'Real experience, not rushed dives',
-                  'Conditions-based site planning',
+                  "Safety-first approach",
+                  "Small, guided sessions",
+                  "Local instructors",
+                  "Calm and unhurried learning",
+                  "Real experience, not rushed dives",
+                  "Conditions-based site planning",
                 ].map((item) => (
                   <div key={item} className="rounded-[1.25rem] border border-white/10 bg-white/5 p-5 text-sm text-slate-200">
                     {item}
@@ -250,9 +250,9 @@ export function SwakeWebsite() {
             </div>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {[
-                ['1', 'Message us or book your slot'],
-                ['2', 'Choose your schedule'],
-                ['3', 'Show up and dive'],
+                ["1", "Message us or book your slot"],
+                ["2", "Choose your schedule"],
+                ["3", "Show up and dive"],
               ].map(([num, text]) => (
                 <div key={num} className="rounded-[1.5rem] border border-white/10 bg-slate-900/70 p-6">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#37A8E0] text-sm font-semibold text-black">
