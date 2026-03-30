@@ -1,5 +1,5 @@
-import { SwakeWebsite } from "@/components/swake-website";
+import { SwakeWebsite } from '@/components/swake-website'
 
-export default function Page() {
-  return <SwakeWebsite />;
+export default function Home() {
+  return <SwakeWebsite />
 }
