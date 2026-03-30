@@ -66,12 +66,12 @@ export function SwakeWebsite() {
   return (
     <div className="min-h-screen bg-white text-neutral-900">
       <header className="border-b border-neutral-200">
-        <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <div>
             <p className="text-xl font-semibold">Swake Diving Center</p>
             <p className="text-sm text-neutral-600">Siquijor</p>
           </div>
-          <nav className="hidden md:flex gap-6 text-sm">
+          <nav className="hidden gap-6 text-sm md:flex">
             <a href="#services">Services</a>
             <a href="#why-swake">Why Swake</a>
             <a href="#faq">FAQ</a>
@@ -317,7 +317,7 @@ export function SwakeWebsite() {
       </section>
 
       <footer className="border-t border-neutral-200">
-        <div className="mx-auto max-w-6xl px-6 py-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-neutral-600">
             © {new Date().getFullYear()} Swake Diving Center. All rights reserved.
           </p>
@@ -329,5 +329,5 @@ export function SwakeWebsite() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
