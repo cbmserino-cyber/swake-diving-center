@@ -136,7 +136,9 @@ export function SwakeWebsite() {
                   <div className="flex aspect-[16/10] items-end rounded-[1.5rem] border border-white/10 bg-[linear-gradient(160deg,#0b0b0b,#112331_48%,#1b0c06)] p-6">
                     <div>
                       <p className="text-sm uppercase tracking-[0.25em] text-[#8ED8FF]">Real sessions</p>
-                      <p className="mt-2 max-w-sm text-xl font-medium">Raw clips, guided dives, and first-time progress in the water.</p>
+                      <p className="mt-2 max-w-sm text-xl font-medium">
+                        Raw clips, guided dives, and first-time progress in the water.
+                      </p>
                     </div>
                   </div>
                 </div>
