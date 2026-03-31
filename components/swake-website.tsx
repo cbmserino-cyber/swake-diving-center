@@ -426,7 +426,7 @@ export function SwakeWebsite() {
                 Raw clips and real progress
               </h3>
         
-              <div className="mt-6 grid grid-cols-2 gap-4">
+              <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
                 {gallery.map((item) => (
                   <div
                     key={item.src}
@@ -448,7 +448,7 @@ export function SwakeWebsite() {
               </div>
         
               <p className="mt-4 text-center text-xs text-slate-500">
-                +{gallery.length}
+                {/* +{gallery.length - 4} more experiences to discover */}
               </p>
             </div>
           </div>
