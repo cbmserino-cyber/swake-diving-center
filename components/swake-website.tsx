@@ -370,9 +370,9 @@ export default function SwakeWebsite() {
 
         {/* Why Swake + Gallery */}
         <section id="why-swake" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="self-start rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50/90 to-white p-8 shadow-sm lg:p-10">
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          <div className="grid items-start gap-8 lg:grid-cols-2">
+            <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50/90 to-white p-6 shadow-sm lg:p-8">
+              <div className="flex items-center gap-4">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
                   <Shield className="h-7 w-7 text-[#37A8E0]" />
                 </div>
