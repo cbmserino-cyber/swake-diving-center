@@ -46,7 +46,7 @@ function MessengerIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default function SwakeWebsite() {
+export function SwakeWebsite() {
   const reviews = [
     {
       quote: "I've done my first free dive with Swake instructors and it was amazing! They are really nice and professional. I highly recommend this diving center!",
