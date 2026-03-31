@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
+import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Instagram } from "lucide-react";
 
 export function SwakeWebsite() {
   const reviews = [
