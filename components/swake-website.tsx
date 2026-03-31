@@ -60,7 +60,7 @@ export function SwakeWebsite() {
   const faqs = [
     { q: "Do I need diving experience?", a: "No. Our intro sessions are designed for first-timers and beginners." },
     { q: "Is it safe?", a: "Safety is central to how we teach and guide every session. Our instructors are certified and experienced." },
-    { q: "What should I bring?", a: "Swimwear, towel, water, sunscreen, and a relaxed mindset. "We&apos;ll provide all the necessary equipment." },
+    { q: "What should I bring?", a: "Swimwear, towel, water, sunscreen, and a relaxed mindset. We&apos;ll provide all the necessary equipment." },
     { q: "How long is a session?", a: "Sessions typically last 2-3 hours, including theory, breathing exercises, and in-water practice." },
   ];
 
