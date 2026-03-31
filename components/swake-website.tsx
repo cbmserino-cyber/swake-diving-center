@@ -243,9 +243,8 @@ export function SwakeWebsite() {
                     <p className="relative mt-2 text-xl font-medium tracking-tight">
                       Raw clips, guided dives, and first-time progress
                     </p>
-                  </div>
-                </div> */}
-              
+                  </div> */}
+
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
                       <Waves className="h-8 w-8 text-[#37A8E0] mb-3" />
@@ -254,10 +253,10 @@ export function SwakeWebsite() {
                         Focus on comfort, technique, and safe progress
                       </p>
                     </div>
-                
+
                     <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
                       <MapPin className="h-8 w-8 text-[#F75F23] mb-3" />
-                      <p className="font-semibold">San Juan, Siquijor, Philippines</p>
+                      <p className="font-semibold">Siquijor, Philippines</p>
                       <p className="mt-2 text-sm text-slate-600">
                         Local instructors, personalized and conditions-based planning
                       </p>
@@ -542,7 +541,7 @@ export function SwakeWebsite() {
                 <div className="mt-6 space-y-4 text-sm text-slate-600">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
-                    <span>San Juan, Siquijor, Philippines</span>
+                    <span>Brgy. Tubod, San Juan 6227, Siquijor, Philippines</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <InstagramIcon className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
