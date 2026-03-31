@@ -20,6 +20,32 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12z" />
+    </svg>
+  );
+}
+
+function MessengerIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M12 2C6.5 2 2 6.1 2 11.1c0 2.9 1.5 5.5 3.9 7.3V22l3.3-1.8c.9.3 1.9.5 2.8.5 5.5 0 10-4.1 10-9.1S17.5 2 12 2zm1 12.5-2.6-2.8-5 2.8 5.6-6 2.6 2.8 5-2.8-5.6 6z" />
+    </svg>
+  );
+}
+
 export function SwakeWebsite() {
   const reviews = [
     {
@@ -193,10 +219,10 @@ export function SwakeWebsite() {
                 {/* Stats Cards */}
                 <div className="grid grid-cols-2 gap-4 pt-8 sm:grid-cols-4">
                   {[
-                    { label: "Intro", value: "First-time" },
-                    { label: "Fundives", value: "Guided" },
-                    { label: "Courses", value: "Wave 1 & 2" },
-                    { label: "Training", value: "Line sessions" },
+                    { label: "First-time", value: "Intro/Disovery class" },
+                    { label: "Guided Adventure", value: "Fundives" },
+                    { label: "Wave 1 & 2", value: "Courses" },
+                    { label: "Line Training", value: "Personalized" },
                   ].map((item) => (
                     <div key={item.label} className="group rounded-2xl border border-slate-200 bg-white/60 p-4 backdrop-blur transition-all hover:border-[#37A8E0]/40 hover:shadow-md">
                       <p className="text-2xl font-bold tracking-tight">{item.value}</p>
@@ -208,7 +234,7 @@ export function SwakeWebsite() {
 
               {/* Hero Right Side */}
               <div className="relative">
-                <div className="grid gap-4">
+                /*<div className="grid gap-4">
                   <div className="relative rounded-3xl border border-slate-200 bg-gradient-to-br from-white/95 to-slate-50/95 p-6 shadow-xl backdrop-blur">
                     <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#37A8E0]/5 to-[#F75F23]/5" />
                     <p className="relative text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
@@ -217,7 +243,7 @@ export function SwakeWebsite() {
                     <p className="relative mt-2 text-xl font-medium tracking-tight">
                       Raw clips, guided dives, and first-time progress
                     </p>
-                  </div>
+                  </div>*/
 
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
@@ -230,9 +256,9 @@ export function SwakeWebsite() {
 
                     <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
                       <MapPin className="h-8 w-8 text-[#F75F23] mb-3" />
-                      <p className="font-semibold">Siquijor, Philippines</p>
+                      <p className="font-semibold">San Juan, Siquijor, Philippines</p>
                       <p className="mt-2 text-sm text-slate-600">
-                        Local instructors, conditions-based planning
+                        Local instructors, personalized and conditions-based planning
                       </p>
                     </div>
                   </div>
@@ -492,6 +518,15 @@ export function SwakeWebsite() {
                     WhatsApp
                   </a>
                   <a
+                    href="https://www.messenger.com/t/115348667850263"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/80 px-8 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:border-[#0084FF] hover:text-[#0084FF] hover:bg-white hover:shadow-md"
+                  >
+                    <MessengerIcon className="h-5 w-5 text-[#0084FF]" />
+                    Messenger
+                  </a>
+                  <a
                     href="https://www.instagram.com/swakefreedivers_siquijor/"
                     className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/80 px-8 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-white hover:shadow-md"
                   >
@@ -506,11 +541,22 @@ export function SwakeWebsite() {
                 <div className="mt-6 space-y-4 text-sm text-slate-600">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
-                    <span>Siquijor, Philippines</span>
+                    <span>San Juan, Siquijor, Philippines</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <InstagramIcon className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
                     <span>@swakefreedivers_siquijor</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <FacebookIcon className="w-4 h-4 mt-0.5 text-[#1877F2]" />
+                    <a
+                      href="https://www.facebook.com/SwakeFD"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#1877F2] transition-colors"
+                    >
+                      Swake Freedivers
+                    </a>
                   </div>
                   <div className="flex items-start gap-3">
                     <MessageCircle className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
