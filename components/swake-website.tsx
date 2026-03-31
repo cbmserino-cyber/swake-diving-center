@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
 
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -47,6 +48,7 @@ function MessengerIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 export function SwakeWebsite() {
+  const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
   const reviews = [
     {
       quote: "I've done my first free dive with Swake instructors and it was amazing! They are really nice and professional. I highly recommend this diving center!",
@@ -430,25 +432,26 @@ export function SwakeWebsite() {
                 {gallery.map((item) => (
                   <div
                     key={item.src}
-                    className="group relative overflow-hidden rounded-xl border border-slate-200"
+                    onClick={() => setSelectedImage(item.src)}
+                    className="group relative cursor-pointer overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
                   >
                     <Image
                       src={item.src}
                       alt={item.label}
-                      width={400}
-                      height={300}
-                      className="h-48 w-full object-cover transition-transform group-hover:scale-105"
+                      width={500}
+                      height={400}
+                      className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:h-72 lg:h-80"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                    <p className="absolute bottom-2 left-2 text-xs font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <p className="absolute bottom-3 left-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       {item.label}
                     </p>
                   </div>
                 ))}
               </div>
-        
+            
               <p className="mt-4 text-center text-xs text-slate-500">
-                {/* +{gallery.length - 4} more experiences to discover */}
+                Tap or click a photo to enlarge
               </p>
             </div>
           </div>
