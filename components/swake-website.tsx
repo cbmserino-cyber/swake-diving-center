@@ -244,7 +244,8 @@ export function SwakeWebsite() {
                       Raw clips, guided dives, and first-time progress
                     </p>
                   </div> */}
-
+              
+                <div className="relative">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
                       <Waves className="h-8 w-8 text-[#37A8E0] mb-3" />
