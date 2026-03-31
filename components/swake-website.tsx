@@ -1,26 +1,27 @@
 import Image from "next/image";
+import { Star, Instagram, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
 
 export function SwakeWebsite() {
   const reviews = [
     {
-      quote:
-        "I've done my first free dive with Swake instructors and it was amazing! They are really nice and professional. I highly recommend this diving center!",
+      quote: "I've done my first free dive with Swake instructors and it was amazing! They are really nice and professional. I highly recommend this diving center!",
       author: "Romain Torres",
+      rating: 5,
     },
     {
-      quote:
-        "Swake free diving is the best, especially for a first timer like me. My coach, Jetter, was incredibly patient and really good at guiding beginners. The reef is beautiful vibrant, clear, and absolutely breathtaking underwater. Such an unforgettable experience.",
+      quote: "Swake free diving is the best, especially for a first timer like me. My coach, Jetter, was incredibly patient and really good at guiding beginners. The reef is beautiful vibrant, clear, and absolutely breathtaking underwater. Such an unforgettable experience.",
       author: "Joshua Waban",
+      rating: 5,
     },
     {
-      quote:
-        "Had so much fun diving with them, they are very accommodating and patient.",
+      quote: "Had so much fun diving with them, they are very accommodating and patient.",
       author: "Allaine Alejo",
+      rating: 5,
     },
     {
-      quote:
-        "Habe hier eine Freediving Introduction gemacht und würde es jedem empfehlen! Zu jeder Zeit habe ich mich wohl und sicher gefühlt. Jeder ist hier nett und offen, man unterstützt hier locals die ihre Leidenschaft im Freediving gefunden haben. Vielen Dank 🤗",
+      quote: "Habe hier eine Freediving Introduction gemacht und würde es jedem empfehlen! Zu jeder Zeit habe ich mich wohl und sicher gefühlt. Jeder ist hier nett und offen, man unterstützt hier locals die ihre Leidenschaft im Freediving gefunden haben. Vielen Dank 🤗",
       author: "Franzi K",
+      rating: 5,
     },
   ];
 
@@ -28,278 +29,232 @@ export function SwakeWebsite() {
     {
       title: "Intro to Freediving",
       price: "From ₱2,500",
-      description:
-        "For first-timers and beginners. Learn the basics of breathing, equalization, and your first open water dives — guided step by step.",
+      description: "For first-timers and beginners. Learn the basics of breathing, equalization, and your first open water dives — guided step by step.",
       cta: "Book Intro",
+      icon: Waves,
+      popular: true,
     },
     {
       title: "Fundive with Guide",
       price: "₱1,500 / person",
-      description:
-        "Relaxed guided sessions for certified or experienced divers, with site selection based on conditions and optional photo coverage.",
+      description: "Relaxed guided sessions for certified or experienced divers, with site selection based on conditions and optional photo coverage.",
       cta: "Book Fundive",
+      icon: Camera,
     },
     {
       title: "Freediving Courses",
       price: "Wave 1 & Wave 2",
-      description:
-        "Structured Molchanovs certification for those looking to progress safely, properly, and at a steady pace.",
+      description: "Structured Molchanovs certification for those looking to progress safely, properly, and at a steady pace.",
       cta: "View Courses",
+      icon: Shield,
     },
-     {
+    {
       title: "Line Training",
       price: "Wave 1 & Wave 2",
-      description:
-        "Personalized  training for those looking to progress safely, properly, and at a steady pace.",
+      description: "Personalized training for those looking to progress safely, properly, and at a steady pace.",
       cta: "Book Training",
+      icon: Clock,
     },
   ];
 
   const faqs = [
-    {
-      q: "Do I need diving experience?",
-      a: "No. Our intro sessions are designed for first-timers and beginners.",
-    },
-    {
-      q: "Is it safe?",
-      a: "Safety is central to how we teach and guide every session.",
-    },
-    {
-      q: "What should I bring?",
-      a: "Swimwear, towel, water, and a relaxed mindset. We will guide you through the rest.",
-    },
+    { q: "Do I need diving experience?", a: "No. Our intro sessions are designed for first-timers and beginners." },
+    { q: "Is it safe?", a: "Safety is central to how we teach and guide every session. Our instructors are certified and experienced." },
+    { q: "What should I bring?", a: "Swimwear, towel, water, sunscreen, and a relaxed mindset. We'll provide all the necessary equipment." },
+    { q: "How long is a session?", a: "Sessions typically last 2-3 hours, including theory, breathing exercises, and in-water practice." },
   ];
 
-const gallery = [
-  {
-    src: "/gallery/intro-1.JPG",
-    label: "Raw intro and training sessions",
-  },
-  {
-    src: "/gallery/intro-1.png",
-    label: "Raw intro and training sessions",
-  },
-  {
-    src: "/gallery/line-training-1.png",
-    label: "Beginner-friendly coaching flow",
-  },
-  {
-    src: "/gallery/line-training-2.JPG",
-    label: "Beginner-friendly coaching flow",
-  },
-  {
-    src: "/gallery/fundive-1.JPG",
-    label: "Guided open water dives at Dumanhog",
-  },
-  {
-    src: "/gallery/fundive-2.png",
-    label: "Guided open water dives at Tulapos",
-  },
-  {
-    src: "/gallery/fundive-3.png",
-    label: "Guided open water dives at Tubod",
-  },
-  {
-    src: "/gallery/fundive-4.png",
-    label: "Guided open water dives at Tulapos",
-  },
-];
+  const gallery = [
+    { src: "/gallery/intro-1.JPG", label: "Intro session", category: "Training" },
+    { src: "/gallery/intro-1.png", label: "Beginner coaching", category: "Training" },
+    { src: "/gallery/line-training-1.png", label: "Line training", category: "Training" },
+    { src: "/gallery/line-training-2.JPG", label: "Depth practice", category: "Training" },
+    { src: "/gallery/fundive-1.JPG", label: "Dumanhog reef", category: "Fundives" },
+    { src: "/gallery/fundive-2.png", label: "Tulapos marine life", category: "Fundives" },
+    { src: "/gallery/fundive-3.png", label: "Tubod sanctuary", category: "Fundives" },
+    { src: "/gallery/fundive-4.png", label: "Tulapos beauty", category: "Fundives" },
+  ];
 
   return (
-    <div className="min-h-screen bg-white text-neutral-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50/50 text-slate-900">
+      {/* Enhanced background with animated elements */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(55,168,224,0.12),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(247,95,35,0.10),transparent_24%),linear-gradient(to_bottom,#ffffff,#f8fbfd_38%,#ffffff)]" />
-        <div className="absolute left-1/2 top-0 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-[#37A8E0]/10 blur-3xl" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_40%,rgba(55,168,224,0.08),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(247,95,35,0.06),transparent_50%)]" />
+        <div className="absolute left-1/4 top-1/3 h-96 w-96 rounded-full bg-gradient-to-r from-[#37A8E0]/5 to-[#F75F23]/5 blur-3xl animate-pulse" />
       </div>
 
-      <header className="sticky top-0 z-50 border-b border-neutral-200/70 bg-white/75 backdrop-blur-xl">
+      {/* Header with scroll effect */}
+      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/Swake-05.png"
-              alt="Swake Logo"
-              width={40}
-              height={40}
-              className="h-10 w-10 object-contain"
-            />
+          <div className="flex items-center gap-3 group cursor-pointer">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
+              <Image
+                src="/Swake-05.png"
+                alt="Swake Logo"
+                width={44}
+                height={44}
+                className="relative h-11 w-11 object-contain transition-transform group-hover:scale-105"
+              />
+            </div>
             <div>
-              <p className="text-lg font-semibold tracking-tight">
+              <p className="text-xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
                 Swake Diving Center
               </p>
-              <p className="text-xs uppercase tracking-[0.25em] text-[#37A8E0]">
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#37A8E0]">
                 Siquijor
               </p>
             </div>
           </div>
 
-          <nav className="hidden gap-6 text-sm text-neutral-600 md:flex">
-            <a href="#services" className="transition hover:text-neutral-900">
-              Services
-            </a>
-            <a href="#why-swake" className="transition hover:text-neutral-900">
-              Why Swake
-            </a>
-            <a href="#faq" className="transition hover:text-neutral-900">
-              FAQ
-            </a>
-            <a href="#contact" className="transition hover:text-neutral-900">
-              Contact
-            </a>
+          <nav className="hidden items-center gap-8 text-sm font-medium md:flex">
+            {["Services", "Why Swake", "FAQ", "Contact"].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase().replace(" ", "-")}`}
+                className="relative text-slate-600 transition-colors hover:text-[#37A8E0] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#37A8E0] after:to-[#F75F23] after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {item}
+              </a>
+            ))}
           </nav>
+
+          <a
+            href="#contact"
+            className="hidden rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] px-5 py-2 text-sm font-medium text-white shadow-md transition-all hover:shadow-lg hover:scale-105 md:block"
+          >
+            Book Now
+          </a>
         </div>
       </header>
 
       <main>
+        {/* Hero Section */}
         <section className="relative overflow-hidden">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
-            <div className="flex flex-col justify-center">
-              <p className="mb-5 inline-flex w-fit rounded-full border border-[#37A8E0]/20 bg-[#37A8E0]/8 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-[#1f8fca]">
-                Safe • Guided • Local
-              </p>
-
-              <h1 className="max-w-2xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-                Learn freediving in Siquijor.
-              </h1>
-
-              <p className="mt-6 max-w-xl text-base leading-7 text-neutral-600 sm:text-lg">
-                Safe, guided sessions for beginners and experienced divers —
-                calm, simple, and at your own pace.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="#contact"
-                  className="rounded-2xl bg-[#F75F23] px-6 py-3 text-sm font-medium text-white shadow-[0_10px_30px_rgba(247,95,35,0.22)] transition hover:-translate-y-0.5"
-                >
-                  Book Intro Session
-                </a>
-                <a
-                  href="https://wa.me/639066293634"
-                  className="rounded-2xl border border-neutral-200 bg-white/80 px-6 py-3 text-sm font-medium text-neutral-900 backdrop-blur transition hover:border-neutral-300 hover:bg-white"
-                >
-                  Message Us
-                </a>
-              </div>
-
-              <div className="mt-10 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3">
-                <div className="rounded-3xl border border-neutral-200 bg-white/70 p-5 shadow-sm backdrop-blur">
-                  <p className="text-2xl font-semibold tracking-tight">Intro</p>
-                  <p className="mt-1 text-sm text-neutral-500">
-                    First-time friendly
-                  </p>
+          <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+              <div className="flex flex-col justify-center space-y-6">
+                <div className="inline-flex w-fit items-center gap-2 rounded-full border border-[#37A8E0]/30 bg-[#37A8E0]/10 px-4 py-1.5">
+                  <div className="h-2 w-2 rounded-full bg-[#37A8E0] animate-pulse" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#1f8fca]">
+                    Safe • Guided • Local
+                  </span>
                 </div>
-                <div className="rounded-3xl border border-neutral-200 bg-white/70 p-5 shadow-sm backdrop-blur">
-                  <p className="text-2xl font-semibold tracking-tight">
-                    Fundives
-                  </p>
-                  <p className="mt-1 text-sm text-neutral-500">
-                    Guided sessions
-                  </p>
+
+                <h1 className="text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
+                  Learn freediving in{" "}
+                  <span className="bg-gradient-to-r from-[#37A8E0] to-[#F75F23] bg-clip-text text-transparent">
+                    Siquijor
+                  </span>
+                </h1>
+
+                <p className="text-lg leading-relaxed text-slate-600 max-w-xl">
+                  Safe, guided sessions for beginners and experienced divers — calm, simple, and at your own pace.
+                </p>
+
+                <div className="flex flex-wrap gap-4 pt-4">
+                  <a
+                    href="#contact"
+                    className="group relative inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-[#F75F23] to-[#ff8a5c] px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
+                  >
+                    Book Intro Session
+                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://wa.me/639066293634"
+                    className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/80 px-8 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-white hover:shadow-md"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    Message Us
+                  </a>
                 </div>
-                <div className="rounded-3xl border border-neutral-200 bg-white/70 p-5 shadow-sm backdrop-blur">
-                  <p className="text-2xl font-semibold tracking-tight">
-                    Courses
-                  </p>
-                  <p className="mt-1 text-sm text-neutral-500">
-                    Molchanovs Wave 1 & 2
-                  </p>
+
+                {/* Stats Cards */}
+                <div className="grid grid-cols-2 gap-4 pt-8 sm:grid-cols-4">
+                  {[
+                    { label: "Intro", value: "First-time" },
+                    { label: "Fundives", value: "Guided" },
+                    { label: "Courses", value: "Wave 1 & 2" },
+                    { label: "Training", value: "Line sessions" },
+                  ].map((item) => (
+                    <div key={item.label} className="group rounded-2xl border border-slate-200 bg-white/60 p-4 backdrop-blur transition-all hover:border-[#37A8E0]/40 hover:shadow-md">
+                      <p className="text-2xl font-bold tracking-tight">{item.value}</p>
+                      <p className="text-xs text-slate-500 mt-1">{item.label}</p>
                     </div>
-                <div className="rounded-3xl border border-neutral-200 bg-white/70 p-5 shadow-sm backdrop-blur">
-                  <p className="text-2xl font-semibold tracking-tight">
-                    Line Training
-                  </p>
-                  <p className="mt-1 text-sm text-neutral-500">
-                    Structured progression
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="mb-6 flex justify-center lg:hidden">
-                <div className="rounded-[2rem] border border-neutral-200 bg-white/70 p-5 shadow-lg backdrop-blur">
-                  <Image
-                    src="/Swake-05.png"
-                    alt="Swake Logo"
-                    width={96}
-                    height={96}
-                    className="h-24 w-24 object-contain"
-                  />
+                  ))}
                 </div>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-[2rem] border border-neutral-200 bg-white/75 p-6 shadow-xl shadow-sky-100/50 backdrop-blur sm:col-span-2">
-                  <div className="flex aspect-[16/10] items-end rounded-[1.5rem] border border-neutral-200 bg-[linear-gradient(160deg,rgba(255,255,255,0.95),rgba(235,247,252,0.95)_52%,rgba(255,242,236,0.95))] p-6">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.25em] text-[#37A8E0]">
-                        Real sessions
+              {/* Hero Right Side */}
+              <div className="relative">
+                <div className="grid gap-4">
+                  <div className="relative rounded-3xl border border-slate-200 bg-gradient-to-br from-white/95 to-slate-50/95 p-6 shadow-xl backdrop-blur">
+                    <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#37A8E0]/5 to-[#F75F23]/5" />
+                    <p className="relative text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
+                      Real sessions
+                    </p>
+                    <p className="relative mt-2 text-xl font-medium tracking-tight">
+                      Raw clips, guided dives, and first-time progress
+                    </p>
+                  </div>
+
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
+                      <Waves className="h-8 w-8 text-[#37A8E0] mb-3" />
+                      <p className="font-semibold">Calm, unhurried learning</p>
+                      <p className="mt-2 text-sm text-slate-600">
+                        Focus on comfort, technique, and safe progress
                       </p>
-                      <p className="mt-2 max-w-sm text-xl font-medium tracking-tight">
-                        Raw clips, guided dives, and first-time progress in the
-                        water.
+                    </div>
+
+                    <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
+                      <MapPin className="h-8 w-8 text-[#F75F23] mb-3" />
+                      <p className="font-semibold">Siquijor, Philippines</p>
+                      <p className="mt-2 text-sm text-slate-600">
+                        Local instructors, conditions-based planning
                       </p>
                     </div>
                   </div>
-                </div>
-
-                <div className="rounded-[2rem] border border-neutral-200 bg-white/70 p-6 shadow-sm backdrop-blur">
-                  <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
-                    Approach
-                  </p>
-                  <p className="mt-2 text-lg font-medium tracking-tight">
-                    Calm, unhurried learning
-                  </p>
-                  <p className="mt-3 text-sm leading-6 text-neutral-600">
-                    We focus on comfort, proper technique, and safe progress —
-                    not rushed depth goals.
-                  </p>
-                </div>
-
-                <div className="rounded-[2rem] border border-neutral-200 bg-white/70 p-6 shadow-sm backdrop-blur">
-                  <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
-                    Location
-                  </p>
-                  <p className="mt-2 text-lg font-medium tracking-tight">
-                    Siquijor, Philippines
-                  </p>
-                  <p className="mt-3 text-sm leading-6 text-neutral-600">
-                    Guided sessions with local instructors and access planned
-                    around conditions and site flow.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="rounded-[2rem] border border-neutral-200 bg-white/75 p-8 shadow-sm backdrop-blur lg:p-10">
+        {/* Reviews Section */}
+        <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-white to-slate-50/80 p-8 shadow-sm lg:p-12">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div>
-                <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
-                  Reviews
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
+                  Testimonials
                 </p>
-                <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+                <h2 className="mt-3 text-4xl font-bold tracking-tight">
                   What divers say
                 </h2>
               </div>
-              <p className="max-w-xl text-sm leading-6 text-neutral-600">
-                Real feedback from first-timers, returning students, and
-                visiting divers.
+              <p className="max-w-xl text-slate-600">
+                Real feedback from first-timers, returning students, and visiting divers from around the world.
               </p>
             </div>
 
-            <div className="mt-8 grid gap-4 lg:grid-cols-3">
+            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {reviews.map((review, index) => (
                 <div
                   key={index}
-                  className="rounded-[1.5rem] border border-neutral-200 bg-neutral-50/90 p-6"
+                  className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:shadow-xl hover:-translate-y-1"
                 >
-                  <p className="text-base leading-7 text-neutral-800">
+                  <div className="flex gap-0.5 mb-4">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-[#F75F23] text-[#F75F23]" />
+                    ))}
+                  </div>
+                  <p className="text-sm leading-relaxed text-slate-700 line-clamp-4">
                     “{review.quote}”
                   </p>
-                  <p className="mt-3 text-sm text-neutral-500">
+                  <p className="mt-4 text-sm font-semibold text-slate-900">
                     — {review.author}
                   </p>
                 </div>
@@ -308,57 +263,71 @@ const gallery = [
           </div>
         </section>
 
-        <section id="services" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="max-w-2xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
+        {/* Services Section */}
+        <section id="services" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto">
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
               Services
             </p>
-            <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+            <h2 className="mt-3 text-4xl font-bold tracking-tight">
               What we offer
             </h2>
-            <p className="mt-4 text-base leading-7 text-neutral-600">
-              Clear options for first-timers, returning divers, and those who
-              want to train further.
+            <p className="mt-4 text-lg text-slate-600">
+              Clear options for first-timers, returning divers, and those who want to train further.
             </p>
           </div>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-3">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="group rounded-[2rem] border border-neutral-200 bg-white/80 p-7 shadow-sm backdrop-blur transition hover:-translate-y-1 hover:border-[#37A8E0]/40 hover:shadow-lg"
-              >
-                <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
-                  {service.price}
-                </p>
-                <h3 className="mt-3 text-2xl font-semibold tracking-tight">
-                  {service.title}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-neutral-600">
-                  {service.description}
-                </p>
-                <a
-                  href="#contact"
-                  className="mt-6 inline-flex rounded-xl border border-neutral-200 bg-white px-4 py-2 text-sm font-medium text-neutral-900 transition group-hover:border-[#37A8E0]/40 group-hover:bg-[#37A8E0]/5"
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {services.map((service) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={service.title}
+                  className="group relative rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:shadow-xl hover:-translate-y-2"
                 >
-                  {service.cta}
-                </a>
-              </div>
-            ))}
+                  {service.popular && (
+                    <div className="absolute -top-3 left-6 rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] px-3 py-1 text-xs font-semibold text-white">
+                      Popular
+                    </div>
+                  )}
+                  <Icon className="h-10 w-10 text-[#37A8E0] mb-4" />
+                  <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+                    {service.price}
+                  </p>
+                  <h3 className="mt-2 text-xl font-bold tracking-tight">
+                    {service.title}
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                    {service.description}
+                  </p>
+                  <a
+                    href="#contact"
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#37A8E0] transition-all group-hover:gap-3"
+                  >
+                    {service.cta}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </section>
 
-        <section id="why-swake" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-            <div className="rounded-[2rem] border border-neutral-200 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(243,249,252,0.92))] p-8 shadow-sm backdrop-blur lg:p-10">
-              <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
+        {/* Why Swake + Gallery */}
+        <section id="why-swake" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-2">
+            <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50/90 to-white p-8 lg:p-10">
+              <Shield className="h-12 w-12 text-[#37A8E0] mb-4" />
+              <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
                 Why Swake
               </p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+              <h2 className="mt-2 text-3xl font-bold tracking-tight">
                 A calm, safety-first approach
               </h2>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 {[
                   "Safety-first approach",
                   "Small, guided sessions",
@@ -369,95 +338,96 @@ const gallery = [
                 ].map((item) => (
                   <div
                     key={item}
-                    className="rounded-[1.25rem] border border-neutral-200 bg-white/75 p-5 text-sm text-neutral-800"
+                    className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white/80 p-3 text-sm"
                   >
+                    <div className="h-1.5 w-1.5 rounded-full bg-[#37A8E0]" />
                     {item}
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-neutral-200 bg-white/75 p-8 shadow-sm backdrop-blur lg:p-10">
-              <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
-                Real sessions
+            <div className="rounded-3xl border border-slate-200 bg-white p-8 lg:p-10">
+              <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
+                Gallery
               </p>
-              <h3 className="mt-2 text-2xl font-semibold tracking-tight">
+              <h3 className="mt-2 text-2xl font-bold tracking-tight">
                 Raw clips and real progress
               </h3>
-              <p className="mt-4 text-sm leading-7 text-neutral-600">
-                Use this section for short video clips or stills from actual
-                intro sessions, training dives, and guided fundives.
-              </p>
 
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                {gallery.map((item) => (
+              <div className="mt-6 grid gap-4 grid-cols-2">
+                {gallery.slice(0, 4).map((item) => (
                   <div
                     key={item.src}
-                    className="overflow-hidden rounded-2xl border border-neutral-200"
+                    className="group relative overflow-hidden rounded-xl border border-slate-200"
                   >
                     <Image
                       src={item.src}
                       alt={item.label}
-                      width={600}
-                      height={400}
-                      className="h-full w-full object-cover"
+                      width={400}
+                      height={300}
+                      className="h-48 w-full object-cover transition-transform group-hover:scale-105"
                     />
-                    
-                    <div className="p-3 text-sm text-neutral-600">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <p className="absolute bottom-2 left-2 text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity">
                       {item.label}
-                    </div>
+                    </p>
                   </div>
                 ))}
               </div>
+              <p className="mt-4 text-center text-xs text-slate-500">
+                +{gallery.length - 4} more experiences to discover
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="rounded-[2rem] border border-neutral-200 bg-white/75 p-8 shadow-sm backdrop-blur lg:p-10">
-            <div className="max-w-2xl">
-              <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
-                Booking flow
+        {/* Booking Flow */}
+        <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="rounded-3xl bg-gradient-to-r from-[#37A8E0]/5 via-white to-[#F75F23]/5 p-8 lg:p-12">
+            <div className="text-center max-w-2xl mx-auto">
+              <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
+                Simple Process
               </p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tight">
-                Simple process
+              <h2 className="mt-3 text-3xl font-bold tracking-tight">
+                Start your underwater journey
               </h2>
             </div>
 
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
               {[
-                ["1", "Message us or book your slot"],
-                ["2", "Choose your schedule"],
-                ["3", "Show up and dive"],
-              ].map(([num, text]) => (
-                <div
-                  key={num}
-                  className="rounded-[1.5rem] border border-neutral-200 bg-neutral-50/90 p-6"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#37A8E0] text-sm font-semibold text-white">
-                    {num}
+                { num: "1", title: "Message us", desc: "Book your preferred slot", icon: MessageCircle },
+                { num: "2", title: "Choose schedule", desc: "Pick a day that works for you", icon: Clock },
+                { num: "3", title: "Show up & dive", desc: "Enjoy your experience", icon: Waves },
+              ].map((step) => {
+                const Icon = step.icon;
+                return (
+                  <div key={step.num} className="text-center group">
+                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] text-2xl font-bold text-white shadow-lg transition-transform group-hover:scale-110">
+                      {step.num}
+                    </div>
+                    <Icon className="mx-auto mt-4 h-6 w-6 text-[#37A8E0]" />
+                    <h3 className="mt-3 text-lg font-bold">{step.title}</h3>
+                    <p className="mt-1 text-sm text-slate-600">{step.desc}</p>
                   </div>
-                  <p className="mt-4 text-lg font-medium tracking-tight">
-                    {text}
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
 
-        <section id="faq" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        {/* FAQ Section */}
+        <section id="faq" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-2">
             <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
+              <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
                 FAQ
               </p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+              <h2 className="mt-3 text-4xl font-bold tracking-tight">
                 New to freediving?
               </h2>
-              <p className="mt-4 text-base leading-7 text-neutral-600">
-                No experience needed. We guide you step by step, with a strong
-                focus on safety, comfort, and proper technique.
+              <p className="mt-4 text-lg text-slate-600">
+                No experience needed. We guide you step by step, with a strong focus on safety, comfort, and proper technique.
               </p>
             </div>
 
@@ -465,10 +435,12 @@ const gallery = [
               {faqs.map((faq) => (
                 <div
                   key={faq.q}
-                  className="rounded-[1.5rem] border border-neutral-200 bg-white/75 p-6 shadow-sm"
+                  className="group rounded-2xl border border-slate-200 bg-white/80 p-6 transition-all hover:shadow-md"
                 >
-                  <h3 className="text-lg font-medium tracking-tight">{faq.q}</h3>
-                  <p className="mt-2 text-sm leading-7 text-neutral-600">
+                  <h3 className="text-lg font-semibold tracking-tight group-hover:text-[#37A8E0] transition-colors">
+                    {faq.q}
+                  </h3>
+                  <p className="mt-2 text-slate-600 leading-relaxed">
                     {faq.a}
                   </p>
                 </div>
@@ -477,58 +449,58 @@ const gallery = [
           </div>
         </section>
 
-        <section id="contact" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="rounded-[2rem] border border-[#37A8E0]/20 bg-[linear-gradient(135deg,rgba(55,168,224,0.10),rgba(255,255,255,0.94),rgba(247,95,35,0.10))] p-8 shadow-sm backdrop-blur lg:p-10">
-            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        {/* Contact Section */}
+        <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="rounded-3xl bg-gradient-to-br from-[#37A8E0]/10 via-white to-[#F75F23]/10 p-8 lg:p-12">
+            <div className="grid gap-8 lg:grid-cols-2">
               <div>
-                <p className="text-sm uppercase tracking-[0.25em] text-[#37A8E0]">
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
                   Book with us
                 </p>
-                <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+                <h2 className="mt-3 text-4xl font-bold tracking-tight">
                   Ready to dive?
                 </h2>
-                <p className="mt-4 max-w-2xl text-base leading-7 text-neutral-700">
-                  Whether it’s your first time or you’re coming back to train,
-                  we keep things safe, clear, and simple.
+                <p className="mt-4 text-lg text-slate-600">
+                  Whether it's your first time or you're coming back to train, we keep things safe, clear, and simple.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
                     href="https://wa.me/639066293634"
-                    className="rounded-2xl bg-[#F75F23] px-6 py-3 text-sm font-medium text-white shadow-[0_10px_30px_rgba(247,95,35,0.22)] transition hover:-translate-y-0.5"
+                    className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-[#F75F23] to-[#ff8a5c] px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
                   >
-                    Message Us on WhatsApp
+                    <MessageCircle className="w-4 h-4" />
+                    WhatsApp
                   </a>
                   <a
                     href="https://www.instagram.com/swakefreedivers_siquijor/"
-                    className="rounded-2xl border border-neutral-200 bg-white/80 px-6 py-3 text-sm font-medium text-neutral-900 transition hover:border-neutral-300 hover:bg-white"
+                    className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/80 px-8 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-white hover:shadow-md"
                   >
-                    Visit Instagram
+                    <Instagram className="w-4 h-4" />
+                    Instagram
                   </a>
                 </div>
               </div>
 
-              <div className="rounded-[1.5rem] border border-neutral-200 bg-white/80 p-6 backdrop-blur">
-                <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
-                  Contact details
-                </p>
-                <div className="mt-6 space-y-4 text-sm leading-7 text-neutral-700">
-                  <p>
-                    <span className="text-neutral-500">Location:</span> Siquijor,
-                    Philippines
-                  </p>
-                  <p>
-                    <span className="text-neutral-500">Instagram:</span>{" "}
-                    @swakefreedivers_siquijor
-                  </p>
-                  <p>
-                    <span className="text-neutral-500">WhatsApp:</span> +63 906
-                    629 3634
-                  </p>
-                  <p>
-                    <span className="text-neutral-500">Hours:</span> By schedule
-                    and weather conditions
-                  </p>
+              <div className="rounded-2xl border border-slate-200 bg-white/90 p-6 backdrop-blur">
+                <h3 className="text-lg font-bold">Contact Details</h3>
+                <div className="mt-6 space-y-4 text-sm text-slate-600">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <span>Siquijor, Philippines</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Instagram className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <span>@swakefreedivers_siquijor</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MessageCircle className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <span>+63 906 629 3634</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Clock className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <span>By schedule and weather conditions</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -536,20 +508,20 @@ const gallery = [
         </section>
       </main>
 
-      <footer className="border-t border-neutral-200">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-neutral-500 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      {/* Footer */}
+      <footer className="border-t border-slate-200 bg-white/80">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <p>
-            © {new Date().getFullYear()} Swake Diving Center. All rights
-            reserved.
+            © {new Date().getFullYear()} Swake Diving Center. All rights reserved.
           </p>
-          <div className="flex gap-4">
-            <a href="#services" className="hover:text-neutral-900">
+          <div className="flex gap-6">
+            <a href="#services" className="transition-colors hover:text-[#37A8E0]">
               Services
             </a>
-            <a href="#faq" className="hover:text-neutral-900">
+            <a href="#faq" className="transition-colors hover:text-[#37A8E0]">
               FAQ
             </a>
-            <a href="#contact" className="hover:text-neutral-900">
+            <a href="#contact" className="transition-colors hover:text-[#37A8E0]">
               Contact
             </a>
           </div>
