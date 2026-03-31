@@ -580,21 +580,26 @@ export default function SwakeWebsite() {
       {/* LIGHTBOX MODAL */}
       {selectedImage && (
         <div
-          className="relative flex max-h-[90vh] w-full max-w-4xl items-center justify-center"
-          onClick={(e) => e.stopPropagation()}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setSelectedImage(null)}
         >
-          <Image
-            src={selectedImage}
-            alt="Expanded gallery"
-            width={1200}
-            height={800}
-            className="max-h-[85vh] w-auto max-w-full rounded-2xl object-contain"
-          />
-
+          <div
+            className="relative flex max-h-[90vh] w-full max-w-4xl items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={selectedImage}
+              alt="Expanded gallery"
+              width={1200}
+              height={800}
+              className="max-h-[85vh] w-auto max-w-full rounded-2xl object-contain"
+            />
+      
             <button
               onClick={() => setSelectedImage(null)}
               className="absolute top-3 right-3 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-slate-900 shadow"
             >
+              ✕
             </button>
           </div>
         </div>
