@@ -595,7 +595,6 @@ export default function SwakeWebsite() {
               onClick={() => setSelectedImage(null)}
               className="absolute top-3 right-3 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-slate-900 shadow"
             >
-              ✕
             </button>
           </div>
         </div>
