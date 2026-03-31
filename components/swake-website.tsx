@@ -234,7 +234,7 @@ export function SwakeWebsite() {
 
               {/* Hero Right Side */}
               <div className="relative">
-                /*<div className="grid gap-4">
+                {/* <div className="grid gap-4">
                   <div className="relative rounded-3xl border border-slate-200 bg-gradient-to-br from-white/95 to-slate-50/95 p-6 shadow-xl backdrop-blur">
                     <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#37A8E0]/5 to-[#F75F23]/5" />
                     <p className="relative text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
@@ -243,26 +243,27 @@ export function SwakeWebsite() {
                     <p className="relative mt-2 text-xl font-medium tracking-tight">
                       Raw clips, guided dives, and first-time progress
                     </p>
-                  </div>*/
-
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
-                      <Waves className="h-8 w-8 text-[#37A8E0] mb-3" />
-                      <p className="font-semibold">Calm, unhurried learning</p>
-                      <p className="mt-2 text-sm text-slate-600">
-                        Focus on comfort, technique, and safe progress
-                      </p>
-                    </div>
-
-                    <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
-                      <MapPin className="h-8 w-8 text-[#F75F23] mb-3" />
-                      <p className="font-semibold">San Juan, Siquijor, Philippines</p>
-                      <p className="mt-2 text-sm text-slate-600">
-                        Local instructors, personalized and conditions-based planning
-                      </p>
-                    </div>
+                  </div>
+                </div> */}
+              
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
+                    <Waves className="h-8 w-8 text-[#37A8E0] mb-3" />
+                    <p className="font-semibold">Calm, unhurried learning</p>
+                    <p className="mt-2 text-sm text-slate-600">
+                      Focus on comfort, technique, and safe progress
+                    </p>
+                  </div>
+              
+                  <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
+                    <MapPin className="h-8 w-8 text-[#F75F23] mb-3" />
+                    <p className="font-semibold">San Juan, Siquijor, Philippines</p>
+                    <p className="mt-2 text-sm text-slate-600">
+                      Local instructors, personalized and conditions-based planning
+                    </p>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
