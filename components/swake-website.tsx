@@ -538,7 +538,14 @@ export function SwakeWebsite() {
                   </div>
                   <div className="flex items-start gap-3">
                     <InstagramIcon className="mt-0.5 h-4 w-4 text-[#37A8E0]" />
-                    <span>@swakefreedivers_siquijor</span>
+                    <a
+                      href="https://www.instagram.com/swakefreedivers_siquijor/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors hover:text-[#37A8E0]"
+                    >
+                      @swakefreedivers_siquijor
+                    </a>
                   </div>
                   <div className="flex items-start gap-3">
                     <FacebookIcon className="mt-0.5 h-4 w-4 text-[#1877F2]" />
