@@ -377,46 +377,47 @@ export default function SwakeWebsite() {
 
         {/* Why Swake + Gallery */}
         <section id="why-swake" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50/90 to-white p-8 shadow-sm lg:p-10">
-            <div className="flex items-center gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
-                <Shield className="h-7 w-7 text-[#37A8E0]" />
-              </div>
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#37A8E0]">
-                  Why Swake
-                </p>
-                <h2 className="mt-1 text-3xl font-bold tracking-tight text-slate-900">
-                  A calm, safety-first approach
-                </h2>
-              </div>
-            </div>
-          
-            <p className="mt-6 max-w-xl text-sm leading-relaxed text-slate-600">
-              We keep sessions personal, paced, and conditions-aware, with a strong focus on
-              technique, comfort, and safety in the water.
-            </p>
-          
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {[
-                "Safety-first approach",
-                "Small, guided sessions",
-                "Local instructors",
-                "Calm and unhurried learning",
-                "Real experience, not rushed dives",
-                "Conditions-based site planning",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm"
-                >
-                  <div className="h-2 w-2 rounded-full bg-[#37A8E0]" />
-                  <span>{item}</span>
+          <div className="grid gap-8 lg:grid-cols-2">
+            <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50/90 to-white p-8 shadow-sm lg:p-10">
+              <div className="flex items-center gap-4">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+                  <Shield className="h-7 w-7 text-[#37A8E0]" />
                 </div>
-              ))}
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#37A8E0]">
+                    Why Swake
+                  </p>
+                  <h2 className="mt-1 text-3xl font-bold tracking-tight text-slate-900">
+                    A calm, safety-first approach
+                  </h2>
+                </div>
+              </div>
+        
+              <p className="mt-6 max-w-xl text-sm leading-relaxed text-slate-600">
+                We keep sessions personal, paced, and conditions-aware, with a strong focus on
+                technique, comfort, and safety in the water.
+              </p>
+        
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                {[
+                  "Safety-first approach",
+                  "Small, guided sessions",
+                  "Local instructors",
+                  "Calm and unhurried learning",
+                  "Real experience, not rushed dives",
+                  "Conditions-based site planning",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm"
+                  >
+                    <div className="h-2 w-2 rounded-full bg-[#37A8E0]" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-
+        
             <div className="rounded-3xl border border-slate-200 bg-white p-8 lg:p-10">
               <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
                 Gallery
@@ -424,8 +425,8 @@ export default function SwakeWebsite() {
               <h3 className="mt-2 text-2xl font-bold tracking-tight">
                 Raw clips and real progress
               </h3>
-
-              <div className="mt-6 grid gap-4 grid-cols-2">
+        
+              <div className="mt-6 grid grid-cols-2 gap-4">
                 {gallery.slice(0, 4).map((item) => (
                   <div
                     key={item.src}
@@ -438,53 +439,17 @@ export default function SwakeWebsite() {
                       height={300}
                       className="h-48 w-full object-cover transition-transform group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <p className="absolute bottom-2 left-2 text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                    <p className="absolute bottom-2 left-2 text-xs font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">
                       {item.label}
                     </p>
                   </div>
                 ))}
               </div>
+        
               <p className="mt-4 text-center text-xs text-slate-500">
                 +{gallery.length - 4} more experiences to discover
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Booking Flow */}
-        <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="rounded-3xl bg-gradient-to-r from-[#37A8E0]/5 via-white to-[#F75F23]/5 p-8 lg:p-12">
-            <div className="text-center max-w-2xl mx-auto">
-              <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
-                Simple Process
-              </p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight">
-                Start your underwater journey
-              </h2>
-            </div>
-
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
-              {[
-                { num: "1", title: "Message us", desc: "Book your preferred slot", icon: MessageCircle },
-                { num: "2", title: "Choose schedule", desc: "Pick a day that works for you", icon: Clock },
-                { num: "3", title: "Show up & dive", desc: "Enjoy your experience", icon: Waves },
-              ].map((step) => {
-                const Icon = step.icon;
-                return (
-                  <div
-                    key={step.num}
-                    className="rounded-[1.75rem] border border-slate-200 bg-white p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] text-lg font-bold text-white shadow-md">
-                      {step.num}
-                    </div>
-                    <Icon className="mx-auto mt-4 h-6 w-6 text-[#37A8E0]" />
-                    <h3 className="mt-3 text-lg font-bold text-slate-900">{step.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-600">{step.desc}</p>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </section>
