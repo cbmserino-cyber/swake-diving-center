@@ -46,7 +46,7 @@ function MessengerIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export function SwakeWebsite() {
+export default function SwakeWebsite() {
   const reviews = [
     {
       quote: "I've done my first free dive with Swake instructors and it was amazing! They are really nice and professional. I highly recommend this diving center!",
@@ -89,14 +89,14 @@ export function SwakeWebsite() {
     {
       title: "Freediving Courses",
       price: "Wave 1 & Wave 2",
-      description: "Structured Molchanovs certification for those looking to progress safely, properly, and at a steady pace.",
+      description: "Structured Molchanovs certification focused on building proper foundations — breathing, equalization, safety protocols, and progressive depth development.",
       cta: "View Courses",
       icon: Shield,
     },
     {
       title: "Line Training",
-      price: "Wave 1 & Wave 2",
-      description: "Personalized training for those looking to progress safely, properly, and at a steady pace.",
+      price: "• ₱1,500 – Up to 15 meters • ₱2,500 – Up to 30 meters",
+      description: "Personalized training for certified or returning divers — refine technique, improve depth, and work on specific skills with feedback.",
       cta: "Book Training",
       icon: Clock,
     },
@@ -217,16 +217,19 @@ export function SwakeWebsite() {
                 </div>
 
                 {/* Stats Cards */}
-                <  div className="grid grid-cols-2 gap-4 pt-8 sm:grid-cols-4">
+                <div className="grid grid-cols-2 gap-4 pt-8 sm:grid-cols-2 xl:grid-cols-4">
                   {[
-                    { label: "First-time", value: "Intro/Disovery class" },
+                    { label: "First-time", value: "Introduction class" },
                     { label: "Guided Adventure", value: "Fundives" },
                     { label: "Wave 1 & 2", value: "Courses" },
                     { label: "Personalized", value: "Line Training" },
                   ].map((item) => (
-                    <div key={item.label} className="group rounded-2xl border border-slate-200 bg-white/60 p-4 backdrop-blur transition-all hover:border-[#37A8E0]/40 hover:shadow-md">
-                      <p className="text-2xl font-bold tracking-tight">{item.value}</p>
-                      <p className="text-xs text-slate-500 mt-1">{item.label}</p>
+                    <div 
+                      key={item.label}
+                      className="rounded-2xl border border-slate-200/80 bg-white/80 px-5 py-5 shadow-sm backdrop-blur transition-all hover:-translate-y-1 hover:border-[#37A8E0]/30 hover:shadow-md"
+                    >
+                      <p className="text-lg font-bold tracking-tight text-slate-900">{item.value}</p>
+                      <p className="mt-1 text-xs uppercase tracking-wide text-slate-500">{item.label}</p>
                     </div>
                   ))}
                 </div>
@@ -286,23 +289,27 @@ export function SwakeWebsite() {
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {reviews.map((review, index) => (
                 <div
                   key={index}
-                  className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:shadow-xl hover:-translate-y-1"
+                  className="group flex h-full flex-col rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <div className="flex gap-0.5 mb-4">
+                  <div className="mb-4 flex gap-0.5">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#F75F23] text-[#F75F23]" />
+                      <Star key={i} className="h-4 w-4 fill-[#F75F23] text-[#F75F23]" />
                     ))}
                   </div>
-                  <p className="text-sm leading-relaxed text-slate-700 line-clamp-4">
+                  
+                  <p className="min-h-[112px] text-sm leading-relaxed text-slate-700">
                     “{review.quote}”
                   </p>
-                  <p className="mt-4 text-sm font-semibold text-slate-900">
-                    — {review.author}
-                  </p>
+                  
+                  <div className="mt-5 border-t border-slate-100 pt-4">
+                    <p className="mt-4 text-sm font-semibold text-slate-900">
+                      — {review.author}
+                    </p>  
+                  </div>
                 </div>
               ))}
             </div>
@@ -323,38 +330,45 @@ export function SwakeWebsite() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {services.map((service) => {
               const Icon = service.icon;
               return (
                 <div
                   key={service.title}
-                  className="group relative rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:shadow-xl hover:-translate-y-2"
+                  className="group relative flex h-full flex-col rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl"
                 >
                   {service.popular && (
-                    <div className="absolute -top-3 left-6 rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] px-3 py-1 text-xs font-semibold text-white">
+                    <div className="absolute -top-3 left-6 rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] px-3 py-1 text-xs font-semibold text-white shadow-md">
                       Popular
                     </div>
                   )}
-                  <Icon className="h-10 w-10 text-[#37A8E0] mb-4" />
-                  <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-50 ring-1 ring-slate-200">
+                    <Icon className="h-10 w-10 text-[#37A8E0] mb-4" />
+                  </div>        
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
                     {service.price}
                   </p>
-                  <h3 className="mt-2 text-xl font-bold tracking-tight">
+                  
+                  <h3 className="mt-2 text-xl font-bold tracking-tight text-slate-900">
                     {service.title}
                   </h3>
-                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                  
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600">
                     {service.description}
                   </p>
-                  <a
-                    href="#contact"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#37A8E0] transition-all group-hover:gap-3"
-                  >
-                    {service.cta}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </a>
+                  
+                  <div className="mt-auto pt-6">
+                    <a
+                      href="#contact"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#37A8E0] transition-all group-hover:gap-3"
+                    >
+                      {service.cta}
+                      <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               );
             })}
@@ -363,35 +377,45 @@ export function SwakeWebsite() {
 
         {/* Why Swake + Gallery */}
         <section id="why-swake" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50/90 to-white p-8 lg:p-10">
-              <Shield className="h-12 w-12 text-[#37A8E0] mb-4" />
-              <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
-                Why Swake
-              </p>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight">
-                A calm, safety-first approach
-              </h2>
-
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                {[
-                  "Safety-first approach",
-                  "Small, guided sessions",
-                  "Local instructors",
-                  "Calm and unhurried learning",
-                  "Real experience, not rushed dives",
-                  "Conditions-based site planning",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white/80 p-3 text-sm"
-                  >
-                    <div className="h-1.5 w-1.5 rounded-full bg-[#37A8E0]" />
-                    {item}
-                  </div>
-                ))}
+          <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50/90 to-white p-8 shadow-sm lg:p-10">
+            <div className="flex items-center gap-4">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+                <Shield className="h-7 w-7 text-[#37A8E0]" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#37A8E0]">
+                  Why Swake
+                </p>
+                <h2 className="mt-1 text-3xl font-bold tracking-tight text-slate-900">
+                  A calm, safety-first approach
+                </h2>
               </div>
             </div>
+          
+            <p className="mt-6 max-w-xl text-sm leading-relaxed text-slate-600">
+              We keep sessions personal, paced, and conditions-aware, with a strong focus on
+              technique, comfort, and safety in the water.
+            </p>
+          
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {[
+                "Safety-first approach",
+                "Small, guided sessions",
+                "Local instructors",
+                "Calm and unhurried learning",
+                "Real experience, not rushed dives",
+                "Conditions-based site planning",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm"
+                >
+                  <div className="h-2 w-2 rounded-full bg-[#37A8E0]" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
 
             <div className="rounded-3xl border border-slate-200 bg-white p-8 lg:p-10">
               <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
@@ -448,13 +472,16 @@ export function SwakeWebsite() {
               ].map((step) => {
                 const Icon = step.icon;
                 return (
-                  <div key={step.num} className="text-center group">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] text-2xl font-bold text-white shadow-lg transition-transform group-hover:scale-110">
+                  <div
+                    key={step.num}
+                    className="rounded-[1.75rem] border border-slate-200 bg-white p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-[#37A8E0] to-[#F75F23] text-lg font-bold text-white shadow-md">
                       {step.num}
                     </div>
                     <Icon className="mx-auto mt-4 h-6 w-6 text-[#37A8E0]" />
-                    <h3 className="mt-3 text-lg font-bold">{step.title}</h3>
-                    <p className="mt-1 text-sm text-slate-600">{step.desc}</p>
+                    <h3 className="mt-3 text-lg font-bold text-slate-900">{step.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">{step.desc}</p>
                   </div>
                 );
               })}
@@ -498,7 +525,7 @@ export function SwakeWebsite() {
         {/* Contact Section */}
         <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="rounded-3xl bg-gradient-to-br from-[#37A8E0]/10 via-white to-[#F75F23]/10 p-8 lg:p-12">
-            <div className="grid gap-8 lg:grid-cols-2">
+            <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
                   Book with us
@@ -536,35 +563,35 @@ export function SwakeWebsite() {
                   </a>
                 </div>
               </div>
-
-              <div className="rounded-2xl border border-slate-200 bg-white/90 p-6 backdrop-blur">
-                <h3 className="text-lg font-bold">Contact Details</h3>
-                <div className="mt-6 space-y-4 text-sm text-slate-600">
+              
+              <div className="rounded-[1.75rem] border border-slate-200 bg-white/95 p-7 shadow-sm backdrop-blur">
+                <h3 className="text-xl font-bold tracking-tight text-slate-900">Contact Details</h3>
+                <div className="mt-6 space-y-5 text-sm text-slate-600">
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <MapPin className="mt-0.5 h-4 w-4 text-[#37A8E0]" />
                     <span>Brgy. Tubod, San Juan 6227, Siquijor, Philippines</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <InstagramIcon className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <InstagramIcon className="mt-0.5 h-4 w-4 text-[#37A8E0]" />
                     <span>@swakefreedivers_siquijor</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <FacebookIcon className="w-4 h-4 mt-0.5 text-[#1877F2]" />
+                    <FacebookIcon className="mt-0.5 h-4 w-4 text-[#1877F2]" />
                     <a
                       href="https://www.facebook.com/SwakeFD"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#1877F2] transition-colors"
+                      className="transition-colors hover:text-[#1877F2]"
                     >
                       Swake Freedivers
                     </a>
                   </div>
                   <div className="flex items-start gap-3">
-                    <MessageCircle className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <MessageCircle className="mt-0.5 h-4 w-4 text-[#37A8E0]" />
                     <span>+63 906 629 3634</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Clock className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <Clock className="mt-0.5 h-4 w-4 text-[#37A8E0]" />
                     <span>By schedule and weather conditions</span>
                   </div>
                 </div>
