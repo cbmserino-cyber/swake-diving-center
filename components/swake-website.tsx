@@ -427,7 +427,7 @@ export function SwakeWebsite() {
               </h3>
         
               <div className="mt-6 grid grid-cols-2 gap-4">
-                {gallery.slice(0, 4).map((item) => (
+                {gallery.map((item) => (
                   <div
                     key={item.src}
                     className="group relative overflow-hidden rounded-xl border border-slate-200"
@@ -448,7 +448,7 @@ export function SwakeWebsite() {
               </div>
         
               <p className="mt-4 text-center text-xs text-slate-500">
-                +{gallery.length - 4} more experiences to discover
+                +{gallery.length}
               </p>
             </div>
           </div>
