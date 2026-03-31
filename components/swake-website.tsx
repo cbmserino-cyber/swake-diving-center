@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, type SVGProps } from "react";
 import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
 
-function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
+function InstagramIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -23,7 +23,7 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
+function FacebookIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -36,7 +36,7 @@ function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-function MessengerIcon(props: React.SVGProps<SVGSVGElement>) {
+function MessengerIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -241,17 +241,6 @@ export default function SwakeWebsite() {
 
               {/* Hero Right Side */}
               <div className="relative">
-                {/* <div className="grid gap-4">
-                  <div className="relative rounded-3xl border border-slate-200 bg-gradient-to-br from-white/95 to-slate-50/95 p-6 shadow-xl backdrop-blur">
-                    <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#37A8E0]/5 to-[#F75F23]/5" />
-                    <p className="relative text-sm font-semibold uppercase tracking-wider text-[#37A8E0]">
-                      Real sessions
-                    </p>
-                    <p className="relative mt-2 text-xl font-medium tracking-tight">
-                      Raw clips, guided dives, and first-time progress
-                    </p>
-                  </div> */}
-              
                 <div className="relative">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
