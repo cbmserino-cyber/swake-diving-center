@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "app/globals.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Swake Diving Center | Freediving in Siquijor",
