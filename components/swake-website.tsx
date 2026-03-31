@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import { useState } from "react";
 import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
 
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
