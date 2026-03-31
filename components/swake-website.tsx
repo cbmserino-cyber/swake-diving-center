@@ -509,7 +509,7 @@ export function SwakeWebsite() {
                     <span>Siquijor, Philippines</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Instagram className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <InstagramIcon className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
                     <span>@swakefreedivers_siquijor</span>
                   </div>
                   <div className="flex items-start gap-3">
