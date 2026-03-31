@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
@@ -425,7 +427,6 @@ export function SwakeWebsite() {
                 Gallery
               </p>
               <h3 className="mt-2 text-2xl font-bold tracking-tight">
-                Raw clips and real progress
               </h3>
         
               <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
