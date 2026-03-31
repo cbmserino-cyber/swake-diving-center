@@ -49,7 +49,7 @@ function MessengerIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export function SwakeWebsite() {
+export default function SwakeWebsite() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const reviews = [
     {
