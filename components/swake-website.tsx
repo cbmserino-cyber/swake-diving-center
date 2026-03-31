@@ -217,12 +217,12 @@ export function SwakeWebsite() {
                 </div>
 
                 {/* Stats Cards */}
-                <div className="grid grid-cols-2 gap-4 pt-8 sm:grid-cols-4">
+                <  div className="grid grid-cols-2 gap-4 pt-8 sm:grid-cols-4">
                   {[
                     { label: "First-time", value: "Intro/Disovery class" },
                     { label: "Guided Adventure", value: "Fundives" },
                     { label: "Wave 1 & 2", value: "Courses" },
-                    { label: "Line Training", value: "Personalized" },
+                    { label: "Personalized", value: "Line Training" },
                   ].map((item) => (
                     <div key={item.label} className="group rounded-2xl border border-slate-200 bg-white/60 p-4 backdrop-blur transition-all hover:border-[#37A8E0]/40 hover:shadow-md">
                       <p className="text-2xl font-bold tracking-tight">{item.value}</p>
