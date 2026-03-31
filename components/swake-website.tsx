@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Star, Instagram, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
+import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
 
 export function SwakeWebsite() {
   const reviews = [
@@ -60,7 +60,7 @@ export function SwakeWebsite() {
   const faqs = [
     { q: "Do I need diving experience?", a: "No. Our intro sessions are designed for first-timers and beginners." },
     { q: "Is it safe?", a: "Safety is central to how we teach and guide every session. Our instructors are certified and experienced." },
-    { q: "What should I bring?", a: "Swimwear, towel, water, sunscreen, and a relaxed mindset. We'll provide all the necessary equipment." },
+    { q: "What should I bring?", a: "Swimwear, towel, water, sunscreen, and a relaxed mindset. "We&apos;ll provide all the necessary equipment." },
     { q: "How long is a session?", a: "Sessions typically last 2-3 hours, including theory, breathing exercises, and in-water practice." },
   ];
 
@@ -461,7 +461,7 @@ export function SwakeWebsite() {
                   Ready to dive?
                 </h2>
                 <p className="mt-4 text-lg text-slate-600">
-                  Whether it's your first time or you're coming back to train, we keep things safe, clear, and simple.
+                  Whether it&apos;s your first time or you&apos;re coming back to train, we keep things safe, clear, and simple.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -476,7 +476,7 @@ export function SwakeWebsite() {
                     href="https://www.instagram.com/swakefreedivers_siquijor/"
                     className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/80 px-8 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-white hover:shadow-md"
                   >
-                    <Instagram className="w-4 h-4" />
+                    <Camera className="w-4 h-4" />
                     Instagram
                   </a>
                 </div>
@@ -490,7 +490,7 @@ export function SwakeWebsite() {
                     <span>Siquijor, Philippines</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Instagram className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
+                    <Camera className="w-4 h-4 mt-0.5 text-[#37A8E0]" />
                     <span>@swakefreedivers_siquijor</span>
                   </div>
                   <div className="flex items-start gap-3">
