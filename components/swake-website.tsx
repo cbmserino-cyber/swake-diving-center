@@ -246,24 +246,24 @@ export function SwakeWebsite() {
                   </div>
                 </div> */}
               
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
-                    <Waves className="h-8 w-8 text-[#37A8E0] mb-3" />
-                    <p className="font-semibold">Calm, unhurried learning</p>
-                    <p className="mt-2 text-sm text-slate-600">
-                      Focus on comfort, technique, and safe progress
-                    </p>
-                  </div>
-              
-                  <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
-                    <MapPin className="h-8 w-8 text-[#F75F23] mb-3" />
-                    <p className="font-semibold">San Juan, Siquijor, Philippines</p>
-                    <p className="mt-2 text-sm text-slate-600">
-                      Local instructors, personalized and conditions-based planning
-                    </p>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
+                      <Waves className="h-8 w-8 text-[#37A8E0] mb-3" />
+                      <p className="font-semibold">Calm, unhurried learning</p>
+                      <p className="mt-2 text-sm text-slate-600">
+                        Focus on comfort, technique, and safe progress
+                      </p>
+                    </div>
+                
+                    <div className="rounded-2xl border border-slate-200 bg-white/80 p-5 backdrop-blur transition-all hover:shadow-md">
+                      <MapPin className="h-8 w-8 text-[#F75F23] mb-3" />
+                      <p className="font-semibold">San Juan, Siquijor, Philippines</p>
+                      <p className="mt-2 text-sm text-slate-600">
+                        Local instructors, personalized and conditions-based planning
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
