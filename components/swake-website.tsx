@@ -43,14 +43,21 @@ export function SwakeWebsite() {
       title: "Freediving Courses",
       price: "Wave 1 & Wave 2",
       description:
-        "Structured Molchanovs training for those looking to progress safely, properly, and at a steady pace.",
+        "Structured Molchanovs certification for those looking to progress safely, properly, and at a steady pace.",
       cta: "View Courses",
+    },
+     {
+      title: "Line Training",
+      price: "Wave 1 & Wave 2",
+      description:
+        "Personalized  training for those looking to progress safely, properly, and at a steady pace.",
+      cta: "Book Training",
     },
   ];
 
   const faqs = [
     {
-      q: "Do I need experience?",
+      q: "Do I need diving experience?",
       a: "No. Our intro sessions are designed for first-timers and beginners.",
     },
     {
@@ -63,12 +70,40 @@ export function SwakeWebsite() {
     },
   ];
 
-  const gallery = [
-    "Raw intro and training sessions",
-    "Beginner-friendly coaching flow",
-    "Guided open water dives",
-    "Quiet progress underwater",
-  ];
+const gallery = [
+  {
+    src: "/gallery/intro-1.JPG",
+    label: "Raw intro and training sessions",
+  },
+  {
+    src: "/gallery/intro-1.png",
+    label: "Raw intro and training sessions",
+  },
+  {
+    src: "/gallery/line-training-1.png",
+    label: "Beginner-friendly coaching flow",
+  },
+  {
+    src: "/gallery/line-training-2.JPG",
+    label: "Beginner-friendly coaching flow",
+  },
+  {
+    src: "/gallery/fundive-1.JPG",
+    label: "Guided open water dives at Dumanhog",
+  },
+  {
+    src: "/gallery/fundive-2.png",
+    label: "Guided open water dives at Tulapos",
+  },
+  {
+    src: "/gallery/fundive-3.png",
+    label: "Guided open water dives at Tubod",
+  },
+  {
+    src: "/gallery/fundive-4.png",
+    label: "Guided open water dives at Tulapos",
+  },
+];
 
   return (
     <div className="min-h-screen bg-white text-neutral-900">
@@ -166,7 +201,15 @@ export function SwakeWebsite() {
                     Courses
                   </p>
                   <p className="mt-1 text-sm text-neutral-500">
-                    Wave progression
+                    Molchanovs Wave 1 & 2
+                  </p>
+                    </div>
+                <div className="rounded-3xl border border-neutral-200 bg-white/70 p-5 shadow-sm backdrop-blur">
+                  <p className="text-2xl font-semibold tracking-tight">
+                    Line Training
+                  </p>
+                  <p className="mt-1 text-sm text-neutral-500">
+                    Structured progression
                   </p>
                 </div>
               </div>
@@ -346,13 +389,23 @@ export function SwakeWebsite() {
                 intro sessions, training dives, and guided fundives.
               </p>
 
-              <div className="mt-6 space-y-3">
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {gallery.map((item) => (
                   <div
-                    key={item}
-                    className="rounded-2xl border border-neutral-200 bg-neutral-50/90 px-4 py-3 text-sm text-neutral-800"
+                    key={item.src}
+                    className="overflow-hidden rounded-2xl border border-neutral-200"
                   >
-                    {item}
+                    <Image
+                      src={item.src}
+                      alt={item.label}
+                      width={600}
+                      height={400}
+                      className="h-full w-full object-cover"
+                    />
+                    
+                    <div className="p-3 text-sm text-neutral-600">
+                      {item.label}
+                    </div>
                   </div>
                 ))}
               </div>
