@@ -1,5 +1,24 @@
 import Image from "next/image";
-import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Camera, Share2 } from "lucide-react";
+import { Star, MessageCircle, Waves, Shield, Clock, MapPin, Camera } from "lucide-react";
+
+function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37a4 4 0 1 1-2.74-3.81 4 4 0 0 1 2.74 3.81z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
 
 export function SwakeWebsite() {
   const reviews = [
@@ -476,7 +495,7 @@ export function SwakeWebsite() {
                     href="https://www.instagram.com/swakefreedivers_siquijor/"
                     className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/80 px-8 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-white hover:shadow-md"
                   >
-                    <Instagram className="w-4 h-4" />
+                    <InstagramIcon className="h-5 w-5" />
                     Instagram
                   </a>
                 </div>
