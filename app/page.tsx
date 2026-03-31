@@ -1,5 +1,5 @@
-import SwakeWebsite from "@/components/swake-website";
+import SwakeWebsiteClient from "@/components/SwakeWebsiteClient";
 
 export default function Home() {
-  return <SwakeWebsite />;
+  return <SwakeWebsiteClient />;
 }
