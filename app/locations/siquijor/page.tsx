@@ -14,7 +14,7 @@ export default function SiquijorLocationPage() {
       <PageHero
         eyebrow="Location"
         title="Tubod, San Juan, Siquijor"
-        description="Use the location page for local relevance: where you meet guests, how site choice depends on conditions, and why this area works well for intro sessions, training, and guided dives."
+        description="Meeting point depends on the season and water conditions, usually either our HQ or Dumanhog."
       />
 
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
