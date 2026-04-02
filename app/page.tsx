@@ -12,8 +12,8 @@ export default function HomePage() {
       <PageHero
         eyebrow="Homepage hub"
         title="Local, safety-first freediving in Siquijor"
-        description="Use the homepage as the overview page. Keep the brand positioning, trust points, service summaries, and clear links to the dedicated service pages. The actual intent-heavy content should live on the service routes."
-        kicker="This scaffold gives Swake a real service architecture instead of one long brochure page."
+        description="Safe, guided freediving sessions in Siquijor for first-timers and experienced divers, with a focus on comfort, technique, and steady progression."
+        kicker="Calm and unhurried learning."
       />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
