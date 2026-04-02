@@ -29,18 +29,18 @@ export const site = {
   baseUrl: "https://swakefreedivers.com",
   tagline: "Local, safety-first freediving in Siquijor",
   description:
-    "Intro to freediving, line training, guided fundives, and Molchanovs courses in Tubod, San Juan, Siquijor.",
+    "Intro to freediving, line training, guided fundives, and Molchanovs certification courses in Siquijor.",
   location: {
-    area: "Tubod, San Juan, Siquijor",
+    area: "Brgy. Tubod, San Juan, Siquijor",
     province: "Siquijor, Philippines",
-    note: "Dive where the locals of Siquijor dive.",
+    note: "Dive where the locals dive.",
   },
   contact: {
     phone: "+63 906 629 3634",
     whatsapp: "https://wa.me/639066293634",
-    instagram: "https://www.instagram.com/swakefreedivers_siquijor/",
+    instagram: "https://www.facebook.com/SwakeFreediversSiquijor/",
     facebook: "https://www.facebook.com/SwakeFD",
-    email: "hello@swakefreedivers.com",
+    email: "swakefreediver@gmail.com",
   },
   trustPoints: [
     "Local instructors and local site knowledge",
@@ -59,7 +59,7 @@ export const site = {
     },
     {
       label: "Open Facebook",
-      href: "https://www.facebook.com/SwakeFD",
+      href: "https://www.facebook.com/SwakeFreediversSiquijor",
     },
   ] satisfies ContactLink[],
 };
@@ -80,7 +80,7 @@ export const services: ServiceSummary[] = [
     title: "Siquijor Fundive with Guide",
     shortTitle: "Fundive with Guide",
     summary:
-      "Guided fundives for guests who already completed an intro class and want to explore up to two sites with local support.",
+      "Guided fundives for guests who already completed an intro class and want to explore up to two sites with local guide.",
     priceLabel: "₱1,500 / pax",
     ctaLabel: "View Fundive",
     href: "/services/fundive-with-guide",
@@ -97,7 +97,7 @@ export const services: ServiceSummary[] = [
   },
   {
     slug: "courses",
-    title: "Molchanovs Courses",
+    title: "Molchanovs Certification Courses",
     shortTitle: "Courses",
     summary:
       "Structured Wave 1 and Wave 2 training for divers building a safer foundation, better technique, and more depth comfort.",
@@ -184,7 +184,7 @@ export const courseCards: CourseCard[] = [
   {
     title: "Molchanovs Wave 1",
     duration: "2–3 days",
-    price: "₱16,000",
+    price: "Contact us for schedule and rate",
     summary:
       "A beginner course with a strong focus on safety, foundational technique, equalization, and skill development.",
     requirements: [
@@ -202,17 +202,17 @@ export const courseCards: CourseCard[] = [
   },
   {
     title: "Molchanovs Wave 2",
-    duration: "Typical published format: 3–4 days",
-    price: "Contact for Swake schedule and rate",
+    duration: "3–4 days",
+    price: "Contact us for schedule and rate",
     summary:
       "An advanced course focused on better technique, deeper comfort, freefall, and stronger pool and open-water performance.",
     requirements: [
-      "Typical pool requirement: 2 minutes 30 seconds static",
-      "Typical pool requirement: 50m DYNB",
-      "Typical pool requirement: 35m DNF",
-      "Typical open-water requirement: 24–30m CWTB and FIM",
-      "Typical open-water requirement: 15m CNF",
-      "Typical safety requirement: 10–15m buddying and rescue",
+      "Pool: 2 minutes 30 seconds static",
+      "Pool: 50m DYNB",
+      "Pool: 35m DNF",
+      "Open-water: 24–30m CWTB and FIM",
+      "Open-water: 15m CNF",
+      "Open-water: 10–15m buddying and rescue",
     ],
     highlights: [
       "Freefall and deeper open-water technique",
@@ -220,7 +220,7 @@ export const courseCards: CourseCard[] = [
       "Advanced safety, rescue, and depth adaptation",
     ],
     note:
-      "Wave 2 details below are based on published Molchanovs program standards and publicly listed provider requirements. Final Swake delivery, pricing, and schedule should be confirmed directly.",
+      "Final delivery, pricing for local and international students, and schedule should be confirmed directly.",
   },
 ];
 
@@ -246,8 +246,13 @@ export const faqs = [
       "No. Environmental or cottage fees and transportation are separate from the listed package prices unless specifically stated.",
   },
   {
+    question: "How long is an intro class?",
+    answer:
+      "Sessions typically last 3-4 hours, including theory, breathing exercises, and in-water session.",
+  },
+  {
     question: "Where do you usually dive?",
     answer:
-      "Swake is based in Tubod, San Juan, and plans sessions according to conditions. Dumanhog and other sites may be used depending on the package and the day’s conditions.",
+      "Swake is based in Tubod, San Juan, and plans sessions according to conditions. Maite, Cangmunag, Dumanhog and other sites may be used depending on the package and the day’s conditions.",
   },
 ];
