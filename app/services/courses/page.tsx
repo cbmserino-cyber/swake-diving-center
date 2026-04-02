@@ -15,7 +15,7 @@ export default function CoursesPage() {
       <PageHero
         eyebrow="Courses"
         title="Molchanovs Wave 1 and Wave 2"
-        description="Keep the courses together on one route first. If course demand and content grow later, you can split Wave 1 and Wave 2 into separate pages without rebuilding the rest of the architecture."
+        description="Structured Molchanovs certification focused on building proper foundations — breathing, equalization, safety protocols, and progressive depth development."
       />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
