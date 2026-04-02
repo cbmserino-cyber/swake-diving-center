@@ -14,7 +14,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Booking and contact details"
-        description="Give all core booking channels a stable URL. This page should match your Google Business Profile, Facebook Page, Instagram bio, and website footer exactly."
+        description=""
       />
 
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
@@ -42,8 +42,6 @@ export default function ContactPage() {
             <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
               <p>{site.location.area}</p>
               <p>{site.location.province}</p>
-              <p>Use this page to state your meeting point, weather and conditions note, and any timing details for morning or afternoon sessions.</p>
-              <p>Keep the wording and contact details identical to your social profiles and business listings.</p>
             </div>
           </div>
         </div>
