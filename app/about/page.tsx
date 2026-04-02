@@ -20,9 +20,8 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-2">
-          {/* Main About */}
-          <div className="rounded-3xl border border-slate-200 bg-white p-8">
-            <p className="text-sm leading-7 text-slate-600">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <p className="mt-4 text-sm leading-7 text-slate-300">
               Swake Freedivers Siquijor is a local freediving center built around
               safety, clear guidance, and real conditions in the water. From
               first-time intro sessions to line training, certification courses,
@@ -30,7 +29,7 @@ export default function AboutPage() {
               grounded in the environment.
             </p>
 
-            <p className="mt-4 text-sm leading-7 text-slate-600">
+            <p className="mt-4 text-sm leading-7 text-slate-300">
               Being locals in Siquijor shapes how we dive. We work in these sites
               daily, understand how they change, and plan each session based on
               conditions — not fixed schedules or rushed programs.
@@ -38,12 +37,11 @@ export default function AboutPage() {
           </div>
 
           {/* Identity / Philosophy */}
-          <div className="rounded-3xl border border-slate-200 bg-white p-8">
-            <h2 className="text-2xl font-semibold text-slate-900">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h2 className="text-2xl font-semibold text-white">
               Local, guided, and safety-first
             </h2>
-
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+            <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-300">
               <li>Small, guided sessions with attention to each diver</li>
               <li>Conditions-based planning for safer and better dives</li>
               <li>Focus on technique, comfort, and long-term progression</li>
