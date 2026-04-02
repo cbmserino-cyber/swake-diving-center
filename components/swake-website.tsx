@@ -151,7 +151,7 @@ export default function SwakeWebsite() {
                 Swake Freedivers Siquijor
               </p>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#37A8E0]">
-                Operated by Swake Diving Center
+                by Swake Diving Center
               </p>
             </div>
           </div>
