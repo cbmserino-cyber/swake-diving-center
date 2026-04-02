@@ -148,7 +148,7 @@ export default function SwakeWebsite() {
             </div>
             <div>
               <p className="text-xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-                Swake Diving Center
+                Swake Freedivers Siquijor
               </p>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#37A8E0]">
                 Siquijor
@@ -543,12 +543,12 @@ export default function SwakeWebsite() {
                   <div className="flex items-start gap-3">
                     <FacebookIcon className="mt-0.5 h-4 w-4 text-[#1877F2]" />
                     <a
-                      href="https://www.facebook.com/SwakeFD"
+                      href="https://www.facebook.com/SwakeFreediversSiquijor"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="transition-colors hover:text-[#1877F2]"
                     >
-                      Swake Freedivers
+                      Swake Freedivers Siquijor
                     </a>
                   </div>
                   <div className="flex items-start gap-3">
@@ -598,7 +598,7 @@ export default function SwakeWebsite() {
       <footer className="border-t border-slate-200 bg-white/80">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <p>
-            © {new Date().getFullYear()} Swake Diving Center. All rights reserved.
+            © {new Date().getFullYear()} Swake Freedivers Siquijor. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#services" className="transition-colors hover:text-[#37A8E0]">
