@@ -15,6 +15,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="A local, safety-first approach to freediving in Siquijor"
+        description="Personal, guided sessions shaped by local conditions, focused on safety, technique, and a calm learning pace."
       />
 
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
