@@ -21,10 +21,6 @@ export default function HomePage() {
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">What Swake does</p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">Intro classes, line training, guided fundives, and Molchanovs courses.</h2>
-            <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-300">
-              Build the homepage around a clear overview, then send visitors to dedicated service pages for pricing, inclusions, minimum requirements, FAQs, and booking decisions.
-            </p>
-
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {site.trustPoints.map((point) => (
                 <div key={point} className="rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-sm text-slate-300">
@@ -76,16 +72,13 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-3">
           <Link href="/about" className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10">
-            <h3 className="text-xl font-semibold text-white">About Swake</h3>
-            <p className="mt-3 text-sm leading-6 text-slate-300">Explain who you are, how you guide, and why the local identity matters.</p>
+            <h3 className="text-xl font-semibold text-white">About Swake Freedivers</h3>
           </Link>
           <Link href="/faq" className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10">
             <h3 className="text-xl font-semibold text-white">Frequently Asked Questions</h3>
-            <p className="mt-3 text-sm leading-6 text-slate-300">Move the common objections and operational questions into a dedicated route.</p>
           </Link>
           <Link href="/contact" className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10">
             <h3 className="text-xl font-semibold text-white">Contact and booking</h3>
-            <p className="mt-3 text-sm leading-6 text-slate-300">Give WhatsApp, Instagram, Facebook, and location details their own stable page.</p>
           </Link>
         </div>
       </section>
