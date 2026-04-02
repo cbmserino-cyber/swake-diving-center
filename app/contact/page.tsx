@@ -4,7 +4,7 @@ import { site } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Swake Freedivers Siquijor through WhatsApp, Instagram, Facebook, or email.",
+  description: "Message Swake Freedivers Siquijor through WhatsApp, Instagram, Facebook, or email.",
   alternates: { canonical: "/contact" },
 };
 
@@ -14,7 +14,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Booking and contact details"
-        description=""
+        description="Message us via WhatsApp, Instagram, or Facebook to book a session or ask about availability."
       />
 
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
