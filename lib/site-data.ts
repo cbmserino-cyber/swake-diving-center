@@ -28,6 +28,7 @@ export type IntroDetails = {
   summary: string;
   audience: string[];
   inclusions: string[];
+  exclusions: string[];
   notes: string[];
 };
 
@@ -215,6 +216,10 @@ export const introDetails: IntroDetails = {
     "Breathing and basic relaxation techniques",
     "Open-water practice",
     "Photos and videos when conditions allow",
+  ],
+  exclusions: [
+    "Environmental or cottage fees",
+    "Site-to-site transport",
   ],
   notes: [
     "Session structure depends on sea conditions and student pace.",
