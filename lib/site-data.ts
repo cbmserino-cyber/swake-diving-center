@@ -20,6 +20,14 @@ export type CourseCard = {
   note?: string;
 };
 
+export type LineTrainingDetails = {
+  title: string;
+  price: string;
+  summary: string;
+  inclusions: string[];
+  notes: string[];
+};
+
 const contact = {
   phone: "+63 906 629 3634",
   email: "swakefreediver@gmail.com",
@@ -33,6 +41,7 @@ export const site = {
   description:
     "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
   legalName: "Swake Dive Center",
+  baseUrl: "https://www.swakefreedivers.com", // change if your real domain is different
   contact,
   contactLinks: [
     { label: "WhatsApp", href: contact.whatsapp },
@@ -43,7 +52,7 @@ export const site = {
   location: {
     area: "Tubod, San Juan, Siquijor",
     province: "Siquijor, Philippines",
-    note: "Meeting point and exact dive site depend on conditions for the day.",
+    note: "Meeting point and exact dive site depend on sea conditions for the day.",
   },
   trustPoints: [
     "Local, safety-first instruction based in Siquijor.",
@@ -89,7 +98,7 @@ export const services: ServiceSummary[] = [
     title: "Siquijor Fundive with Guide",
     shortTitle: "Fundive with Guide",
     summary:
-      "Guided fundives for guests who already completed an intro class and want to explore up to two sites with local guide.",
+      "Guided fundives for guests who already completed an intro class and want to explore up to two sites with a local guide.",
     priceLabel: "₱1,500 / pax",
     ctaLabel: "View Fundive",
     href: "/services/fundive-with-guide",
@@ -164,3 +173,22 @@ export const courseCards: CourseCard[] = [
       "Best suited to divers who already have a solid foundation and want guided progression.",
   },
 ];
+
+export const lineTrainingDetails: LineTrainingDetails = {
+  title: "Line Training in Siquijor",
+  price: "₱1,500–₱2,500",
+  summary:
+    "A coached line-training session for divers who want structured training, technical feedback, and safer progression in open water.",
+  inclusions: [
+    "Pre-session briefing and planning",
+    "Condition-based site selection",
+    "Supervised line dives",
+    "Technique feedback after each round",
+    "Safety support during the session",
+  ],
+  notes: [
+    "Best for divers with previous freediving experience.",
+    "Final setup depends on sea conditions and diver level.",
+    "Message first to confirm schedule, inclusions, and current rate.",
+  ],
+};
