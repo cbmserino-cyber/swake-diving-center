@@ -30,7 +30,7 @@ export default function FundiveWithGuidePage() {
           <div className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
-                Transport add-ons
+                Transport add-ons (Optional)
               </p>
               <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-300">
                 {fundiveDetails.transportAddOns.map((item) => (
