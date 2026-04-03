@@ -48,6 +48,8 @@ export type LineTrainingDetails = {
   title: string;
   price: string;
   summary: string;
+  schedule: string;
+  minRequirement: string;
   rates: string[];
   inclusions: string[];
   notes: string[];
@@ -261,6 +263,8 @@ export const lineTrainingDetails: LineTrainingDetails = {
   price: "₱1,500–₱2,500",
   summary:
     "A coached line-training session for divers working on comfort, technique, efficiency, and depth progression.",
+  schedule: "By conditions and prior arrangement",
+  minRequirement: "Previous freediving experience required",
   rates: [
     "Solo or private coaching: contact for current rate",
     "Small group setup: contact for current rate",
