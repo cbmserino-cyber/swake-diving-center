@@ -215,11 +215,24 @@ export const introDetails: IntroDetails = {
   ],
 };
 
+export type FundiveDetails = {
+  title: string;
+  price: string;
+  summary: string;
+  schedule: string;
+  minRequirement: string;
+  inclusions: string[];
+  transportAddOns: string[];
+  notes: string[];
+};
+
 export const fundiveDetails: FundiveDetails = {
   title: "Siquijor Fundive with Guide",
   price: "₱1,500 per person",
   summary:
     "A guided fundive session for divers with prior intro-level experience who want local support and condition-based site planning.",
+  schedule: "8:00 AM–12:00 NN or 1:00 PM–5:00 PM",
+  minRequirement: "Intro to Freediving or equivalent experience required",
   inclusions: [
     "Guided session with certified instructor",
     "Up to two dive sites",
@@ -232,10 +245,11 @@ export const fundiveDetails: FundiveDetails = {
   ],
   notes: [
     "Environmental fees, gear rental, and transport are separate.",
-    "Typical session windows are 8:00 AM–12:00 NN or 1:00 PM–5:00 PM.",
-    "Site choice depends on current, visibility, monsoon, tide, and traffic.",
+    "Site choice depends on current, visibility, monsoon, tide, and site traffic.",
+    "Each session is planned based on actual conditions on the day.",
   ],
 };
+
 
 export const lineTrainingDetails: LineTrainingDetails = {
   title: "Line Training",
