@@ -33,6 +33,8 @@ export type FundiveDetails = {
   title: string;
   price: string;
   summary: string;
+  schedule: string;
+  minRequirement: string;
   inclusions: string[];
   transportAddOns: string[];
   notes: string[];
@@ -215,16 +217,6 @@ export const introDetails: IntroDetails = {
   ],
 };
 
-export type FundiveDetails = {
-  title: string;
-  price: string;
-  summary: string;
-  schedule: string;
-  minRequirement: string;
-  inclusions: string[];
-  transportAddOns: string[];
-  notes: string[];
-};
 
 export const fundiveDetails: FundiveDetails = {
   title: "Siquijor Fundive with Guide",
@@ -245,8 +237,8 @@ export const fundiveDetails: FundiveDetails = {
   ],
   notes: [
     "Environmental fees, gear rental, and transport are separate.",
-    "Site choice depends on current, visibility, monsoon, tide, and site traffic.",
-    "Each session is planned based on actual conditions on the day.",
+    "Typical session windows are 8:00 AM–12:00 NN or 1:00 PM–5:00 PM.",
+    "Site choice depends on current, visibility, monsoon, tide, and traffic.",
   ],
 };
 
