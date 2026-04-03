@@ -22,6 +22,8 @@ export type CourseCard = {
 
 export type IntroDetails = {
   title: string;
+  duration: string;
+  schedule: string;
   price: string;
   summary: string;
   audience: string[];
@@ -198,6 +200,8 @@ export const courseCards: CourseCard[] = [
 
 export const introDetails: IntroDetails = {
   title: "Intro to Freediving",
+  duration: "Half day",
+  schedule: "8AM - 12NN | Weekdays and weekends - prior arrangement",
   price: "₱2,500",
   summary:
     "A first-timer session focused on comfort in the water, basic theory, breathing, safety, and a supervised open-water experience.",
@@ -208,8 +212,8 @@ export const introDetails: IntroDetails = {
   ],
   inclusions: [
     "Introductory theory session",
-    "Breathing and water comfort basics",
-    "Supervised confined or open-water practice",
+    "Breathing and basic relaxation techniques",
+    "Open-water practice",
     "Photos and videos when conditions allow",
   ],
   notes: [
