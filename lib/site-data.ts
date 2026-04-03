@@ -36,6 +36,7 @@ export type FundiveDetails = {
   schedule: string;
   minRequirement: string;
   inclusions: string[];
+  exclusions: string[];
   transportAddOns: string[];
   notes: string[];
 };
@@ -217,7 +218,6 @@ export const introDetails: IntroDetails = {
   ],
 };
 
-
 export const fundiveDetails: FundiveDetails = {
   title: "Siquijor Fundive with Guide",
   price: "₱1,500 per person",
@@ -231,17 +231,21 @@ export const fundiveDetails: FundiveDetails = {
     "Around one hour per site",
     "Photos and videos",
   ],
+  exclusions: [
+    "Environmental fees",
+    "Gear rental",
+    "Site-to-site transport",
+  ],
   transportAddOns: [
     "Solo motorbike transport: +₱700",
     "Group easyride/cab transport: +₱2,500",
   ],
   notes: [
-    "Environmental fees, gear rental, and transport are separate.",
+    "Each session is planned based on actual conditions on the day.",
     "Typical session windows are 8:00 AM–12:00 NN or 1:00 PM–5:00 PM.",
     "Site choice depends on current, visibility, monsoon, tide, and traffic.",
   ],
 };
-
 
 export const lineTrainingDetails: LineTrainingDetails = {
   title: "Line Training",
