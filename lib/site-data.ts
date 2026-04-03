@@ -23,6 +23,7 @@ export const site = {
   description:
     "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
   legalName: "Swake Dive Center",
+  baseUrl: "https://www.swakefreedivers.com", // replace only if your real deployed canonical URL is different
   contact,
   contactLinks: [
     { label: "WhatsApp", href: contact.whatsapp },
@@ -54,6 +55,29 @@ export const faqs = [
       "Send a message through WhatsApp, Instagram, Facebook, or email to confirm availability and session details.",
   },
 ];
+
+export const introDetails = {
+  audience: [
+    "First-timers who want a structured first experience",
+    "Travelers looking for a calm, safety-first introduction",
+    "Ocean swimmers or snorkelers curious about freediving",
+  ],
+};
+
+export const fundiveDetails = {
+  transportAddOns: [
+    "Solo motorbike add-on: ₱700",
+    "Group easyride cab add-on: ₱2,500",
+    "Environmental fees are separate when applicable",
+  ],
+};
+
+export const lineTrainingDetails = {
+  rates: [
+    "Single session: ₱1,500",
+    "Package options available depending on goals and schedule",
+  ],
+};
 
 export const services: ServiceSummary[] = [
   {
