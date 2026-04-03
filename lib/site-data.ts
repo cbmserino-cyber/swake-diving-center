@@ -10,6 +10,16 @@ export type ServiceSummary = {
   imageAlt: string;
 };
 
+export type CourseCard = {
+  title: string;
+  duration: string;
+  price: string;
+  summary: string;
+  requirements: string[];
+  highlights: string[];
+  note?: string;
+};
+
 const contact = {
   phone: "+63 906 629 3634",
   email: "swakefreediver@gmail.com",
@@ -23,7 +33,6 @@ export const site = {
   description:
     "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
   legalName: "Swake Dive Center",
-  baseUrl: "https://www.swakefreedivers.com", // replace only if your real deployed canonical URL is different
   contact,
   contactLinks: [
     { label: "WhatsApp", href: contact.whatsapp },
@@ -36,6 +45,12 @@ export const site = {
     province: "Siquijor, Philippines",
     note: "Meeting point and exact dive site depend on conditions for the day.",
   },
+  trustPoints: [
+    "Local, safety-first instruction based in Siquijor.",
+    "Sessions adjusted to sea conditions and diver level.",
+    "Suitable for first-timers, returning divers, and training-focused guests.",
+    "Progression is kept steady, clear, and not rushed.",
+  ],
 };
 
 export const faqs = [
@@ -55,29 +70,6 @@ export const faqs = [
       "Send a message through WhatsApp, Instagram, Facebook, or email to confirm availability and session details.",
   },
 ];
-
-export const introDetails = {
-  audience: [
-    "First-timers who want a structured first experience",
-    "Travelers looking for a calm, safety-first introduction",
-    "Ocean swimmers or snorkelers curious about freediving",
-  ],
-};
-
-export const fundiveDetails = {
-  transportAddOns: [
-    "Solo motorbike add-on: ₱700",
-    "Group easyride cab add-on: ₱2,500",
-    "Environmental fees are separate when applicable",
-  ],
-};
-
-export const lineTrainingDetails = {
-  rates: [
-    "Single session: ₱1,500",
-    "Package options available depending on goals and schedule",
-  ],
-};
 
 export const services: ServiceSummary[] = [
   {
@@ -127,5 +119,48 @@ export const services: ServiceSummary[] = [
     href: "/services/courses",
     image: "/gallery/intro-1.png",
     imageAlt: "Freediving course session in Siquijor",
+  },
+];
+
+export const courseCards: CourseCard[] = [
+  {
+    title: "Molchanovs Wave 1",
+    duration: "2–3 days",
+    price: "Contact for current rate",
+    summary:
+      "Entry-level certification focused on equalization, safety, open-water technique, and a stable training foundation.",
+    requirements: [
+      "Comfortable in the water",
+      "Able to swim confidently",
+      "Suitable for beginners and early-stage divers",
+    ],
+    highlights: [
+      "Breathing and relaxation basics",
+      "Equalization foundations",
+      "Static, dynamic, and depth sessions",
+      "Safety procedures and buddy work",
+    ],
+    note:
+      "Exact structure depends on conditions, student pace, and certification standards.",
+  },
+  {
+    title: "Molchanovs Wave 2",
+    duration: "3 days",
+    price: "Contact for current rate",
+    summary:
+      "Progressive course for divers ready to refine technique, improve efficiency, and build deeper open-water confidence.",
+    requirements: [
+      "Wave 1 or equivalent certification",
+      "Comfort with previous depth training",
+      "Good equalization control",
+    ],
+    highlights: [
+      "Advanced technique refinement",
+      "Rescue and safety progression",
+      "Depth-specific coaching",
+      "Structured performance feedback",
+    ],
+    note:
+      "Best suited to divers who already have a solid foundation and want guided progression.",
   },
 ];
