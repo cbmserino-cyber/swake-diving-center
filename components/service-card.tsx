@@ -1,18 +1,40 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ServiceSummary } from "@/lib/site-data";
 
 export function ServiceCard({ service }: { service: ServiceSummary }) {
   return (
-    <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/10">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">{service.priceLabel}</p>
-      <h3 className="mt-3 text-2xl font-semibold text-white">{service.shortTitle}</h3>
-      <p className="mt-4 flex-1 text-sm leading-6 text-slate-300">{service.summary}</p>
-      <Link
-        href={service.href}
-        className="mt-6 inline-flex items-center text-sm font-semibold text-cyan-300 transition hover:text-cyan-200"
-      >
-        {service.ctaLabel}
-      </Link>
+    <article className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
+      <div className="relative aspect-[4/3]">
+        <Image
+          src={service.image}
+          alt={service.imageAlt}
+          fill
+          className="object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+        />
+      </div>
+
+      <div className="p-6">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+          {service.priceLabel}
+        </p>
+
+        <h3 className="mt-3 text-2xl font-bold tracking-tight text-white">
+          {service.shortTitle}
+        </h3>
+
+        <p className="mt-4 text-sm leading-6 text-slate-300">
+          {service.summary}
+        </p>
+
+        <Link
+          href={service.href}
+          className="mt-6 inline-flex rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+        >
+          {service.ctaLabel}
+        </Link>
+      </div>
     </article>
   );
 }
