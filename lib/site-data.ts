@@ -1,8 +1,3 @@
-export type ContactLink = {
-  label: string;
-  href: string;
-};
-
 export type ServiceSummary = {
   slug: string;
   title: string;
@@ -13,54 +8,6 @@ export type ServiceSummary = {
   href: string;
   image: string;
   imageAlt: string;
-};
-
-export type CourseCard = {
-  title: string;
-  duration: string;
-  price: string;
-  summary: string;
-  requirements: string[];
-  highlights: string[];
-  note?: string;
-};
-
-export const site = {
-  name: "Swake Freedivers Siquijor",
-  legalName: "Swake Diving Center",
-  baseUrl: "https://swakefreedivers.com",
-  tagline: "Local, safety-first freediving in Siquijor",
-  description:
-    "Intro to freediving, line training, guided fundives, and Molchanovs certification courses in Siquijor.",
-  location: {
-    area: "Brgy. Tubod, San Juan, Siquijor",
-    province: "Siquijor, Philippines",
-    note: "Dive where the locals dive.",
-  },
-  contact: {
-    phone: "+63 906 629 3634",
-    whatsapp: "https://wa.me/639066293634",
-    instagram: "https://www.instagram.com/swakefreedivers_siquijor",
-    facebook: "https://www.facebook.com/SwakeFreediversSiquijor",
-    email: "swakefreediver@gmail.com",
-  },
-  trustPoints: [
-    "Local instructors and local site knowledge",
-    "Safety-first teaching and guiding",
-    "Small-group, first-timer-friendly sessions",
-    "Conditions-based planning for better comfort in the water",
-  ],
-  contactLinks: [
-    { label: "Book on WhatsApp", href: "https://wa.me/639066293634" },
-    {
-      label: "Message on Instagram",
-      href: "https://www.instagram.com/swakefreedivers_siquijor/",
-    },
-    {
-      label: "Open Facebook",
-      href: "https://www.facebook.com/SwakeFreediversSiquijor",
-    },
-  ] satisfies ContactLink[],
 };
 
 export const services: ServiceSummary[] = [
