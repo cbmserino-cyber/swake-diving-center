@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/lib/site-data";
 
 type SiteLayoutProps = {
@@ -19,13 +20,29 @@ export function SiteLayout({ children }: SiteLayoutProps) {
     <div className="min-h-screen bg-slate-950 text-slate-50">
       <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-950/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
-          <Link href="/" className="min-w-0">
-            <p className="truncate text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
-              {site.name}
-            </p>
-            <p className="truncate text-xs text-slate-400">Operated by {site.legalName}</p>
+          
+          {/* LOGO + BRAND */}
+          <Link href="/" className="flex min-w-0 items-center gap-3">
+            <Image
+              src="/gallery/Swake-05.png"
+              alt="Swake Freedivers Siquijor logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 object-contain"
+              priority
+            />
+
+            <div className="min-w-0 leading-tight">
+              <p className="truncate text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+                Swake
+              </p>
+              <p className="truncate text-xs text-slate-400">
+                Freedivers Siquijor
+              </p>
+            </div>
           </Link>
 
+          {/* NAV */}
           <nav className="hidden items-center gap-5 md:flex">
             {navItems.map((item) => (
               <Link
@@ -38,6 +55,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
             ))}
           </nav>
 
+          {/* CTA */}
           <a
             href={site.contact.whatsapp}
             className="rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
