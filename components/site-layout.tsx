@@ -24,7 +24,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
           {/* LOGO + BRAND */}
           <Link href="/" className="flex min-w-0 items-center gap-3">
             <Image
-              src="/gallery/Swake-05.png"
+              src="public/gallery/Swake-05.png"
               alt="Swake Freedivers Siquijor logo"
               width={40}
               height={40}
