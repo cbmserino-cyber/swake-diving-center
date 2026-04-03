@@ -1,57 +1,25 @@
-import Image from "next/image";
+import { site } from "@/lib/site-data";
 
-type PageHeroProps = {
-  eyebrow?: string;
-  title: string;
-  description: string;
-  kicker?: string;
-};
-
-export function PageHero({
-  eyebrow,
-  title,
-  description,
-  kicker,
-}: PageHeroProps) {
+export function CtaStrip() {
   return (
-    <section className="mx-auto max-w-5xl px-6 pt-12 pb-8 lg:px-8">
-      <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm lg:p-10">
-        <div className="mb-6 flex items-center gap-4">
-          <Image
-            src="/Swake-05.png"
-            alt="Swake Freedivers Siquijor logo"
-            width={56}
-            height={56}
-            className="h-14 w-14 object-contain"
-            priority
-          />
-          <div>
-            <p className="text-lg font-bold tracking-tight text-slate-900">
-              Swake Freedivers
-            </p>
-            <p className="text-xs font-medium uppercase tracking-[0.24em] text-[#37A8E0]">
-              Siquijor • by Swake Diving Center
-            </p>
-          </div>
-        </div>
-
-        {eyebrow ? (
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#37A8E0]">
-            {eyebrow}
-          </p>
-        ) : null}
-
-        <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
-          {title}
-        </h1>
-
-        <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-          {description}
+    <section className="mx-auto max-w-6xl px-6 py-12 lg:px-8">
+      <div className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">Ready to book?</p>
+        <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">Tell people what session you want, then send them directly to the booking channel.</h2>
+        <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-300">
+          Use this section as the final conversion point on service pages. Most guests will contact you through WhatsApp, Instagram, or Facebook Messenger.
         </p>
-
-        {kicker ? (
-          <p className="mt-4 text-sm font-medium text-slate-500">{kicker}</p>
-        ) : null}
+        <div className="mt-6 flex flex-wrap gap-3">
+          {site.contactLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
