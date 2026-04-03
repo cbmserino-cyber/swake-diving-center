@@ -20,10 +20,29 @@ export type CourseCard = {
   note?: string;
 };
 
+export type IntroDetails = {
+  title: string;
+  price: string;
+  summary: string;
+  audience: string[];
+  inclusions: string[];
+  notes: string[];
+};
+
+export type FundiveDetails = {
+  title: string;
+  price: string;
+  summary: string;
+  inclusions: string[];
+  transportAddOns: string[];
+  notes: string[];
+};
+
 export type LineTrainingDetails = {
   title: string;
   price: string;
   summary: string;
+  rates: string[];
   inclusions: string[];
   notes: string[];
 };
@@ -41,7 +60,7 @@ export const site = {
   description:
     "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
   legalName: "Swake Dive Center",
-  baseUrl: "https://www.swakefreedivers.com", // change if your real domain is different
+  baseUrl: "https://swake-diving-center.vercel.app",
   contact,
   contactLinks: [
     { label: "WhatsApp", href: contact.whatsapp },
@@ -52,13 +71,13 @@ export const site = {
   location: {
     area: "Tubod, San Juan, Siquijor",
     province: "Siquijor, Philippines",
-    note: "Meeting point and exact dive site depend on sea conditions for the day.",
+    note: "Meeting point and exact dive site depend on conditions for the day.",
   },
   trustPoints: [
     "Local, safety-first instruction based in Siquijor.",
-    "Sessions adjusted to sea conditions and diver level.",
-    "Suitable for first-timers, returning divers, and training-focused guests.",
-    "Progression is kept steady, clear, and not rushed.",
+    "Sessions are planned around actual sea conditions and diver level.",
+    "Suitable for first-timers, returning divers, and progressing students.",
+    "Progression is kept steady and not rushed.",
   ],
 };
 
@@ -98,7 +117,7 @@ export const services: ServiceSummary[] = [
     title: "Siquijor Fundive with Guide",
     shortTitle: "Fundive with Guide",
     summary:
-      "Guided fundives for guests who already completed an intro class and want to explore up to two sites with a local guide.",
+      "Guided fundives for guests who already completed an intro class and want to explore up to two sites with local guidance.",
     priceLabel: "₱1,500 / pax",
     ctaLabel: "View Fundive",
     href: "/services/fundive-with-guide",
@@ -137,7 +156,7 @@ export const courseCards: CourseCard[] = [
     duration: "2–3 days",
     price: "Contact for current rate",
     summary:
-      "Entry-level certification focused on equalization, safety, open-water technique, and a stable training foundation.",
+      "Entry-level certification focused on safety, equalization, open-water technique, and a stable foundation.",
     requirements: [
       "Comfortable in the water",
       "Able to swim confidently",
@@ -157,7 +176,7 @@ export const courseCards: CourseCard[] = [
     duration: "3 days",
     price: "Contact for current rate",
     summary:
-      "Progressive course for divers ready to refine technique, improve efficiency, and build deeper open-water confidence.",
+      "Progressive course for divers ready to refine technique, improve efficiency, and build deeper confidence.",
     requirements: [
       "Wave 1 or equivalent certification",
       "Comfort with previous depth training",
@@ -174,21 +193,67 @@ export const courseCards: CourseCard[] = [
   },
 ];
 
+export const introDetails: IntroDetails = {
+  title: "Intro to Freediving",
+  price: "₱2,500",
+  summary:
+    "A first-timer session focused on comfort in the water, basic theory, breathing, safety, and a supervised open-water experience.",
+  audience: [
+    "First-timers who want a proper introduction",
+    "Travelers curious about freediving in Siquijor",
+    "Beginners who prefer a calm, safety-first approach",
+  ],
+  inclusions: [
+    "Introductory theory session",
+    "Breathing and water comfort basics",
+    "Supervised confined or open-water practice",
+    "Photos and videos when conditions allow",
+  ],
+  notes: [
+    "Session structure depends on sea conditions and student pace.",
+    "Message first to confirm schedule and inclusions.",
+  ],
+};
+
+export const fundiveDetails: FundiveDetails = {
+  title: "Siquijor Fundive with Guide",
+  price: "₱1,500 per person",
+  summary:
+    "A guided fundive session for divers with prior intro-level experience who want local support and condition-based site planning.",
+  inclusions: [
+    "Guided session with certified instructor",
+    "Up to two dive sites",
+    "Around one hour per site",
+    "Photos and videos",
+  ],
+  transportAddOns: [
+    "Solo motorbike transport: +₱700",
+    "Group easyride/cab transport: +₱2,500",
+  ],
+  notes: [
+    "Environmental fees, gear rental, and transport are separate.",
+    "Typical session windows are 8:00 AM–12:00 NN or 1:00 PM–5:00 PM.",
+    "Site choice depends on current, visibility, monsoon, tide, and traffic.",
+  ],
+};
+
 export const lineTrainingDetails: LineTrainingDetails = {
-  title: "Line Training in Siquijor",
+  title: "Line Training",
   price: "₱1,500–₱2,500",
   summary:
-    "A coached line-training session for divers who want structured training, technical feedback, and safer progression in open water.",
+    "A coached line-training session for divers working on comfort, technique, efficiency, and depth progression.",
+  rates: [
+    "Solo or private coaching: contact for current rate",
+    "Small group setup: contact for current rate",
+  ],
   inclusions: [
-    "Pre-session briefing and planning",
+    "Pre-session briefing and dive plan",
     "Condition-based site selection",
     "Supervised line dives",
-    "Technique feedback after each round",
-    "Safety support during the session",
+    "Technique feedback after rounds",
   ],
   notes: [
     "Best for divers with previous freediving experience.",
-    "Final setup depends on sea conditions and diver level.",
-    "Message first to confirm schedule, inclusions, and current rate.",
+    "Final setup depends on conditions and diver level.",
   ],
 };
