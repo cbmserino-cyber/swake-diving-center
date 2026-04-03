@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       <LocalBusinessJsonLd />
       <PageHero
-        eyebrow="Homepage hub"
+        eyebrow=""
         title="Local, safety-first freediving in Siquijor"
         description="Safe, guided freediving sessions in Siquijor for first-timers and experienced divers, with a focus on comfort, technique, and steady progression."
         kicker="Calm and unhurried learning."
@@ -20,10 +20,10 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">What Swake does</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">Intro classes, line training, guided fundives, and Molchanovs courses.</h2>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">Intro classes, line training, guided fundives, and Molchanovs certification courses.</h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {site.trustPoints.map((point) => (
-                <div key={point} className="rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-sm text-slate-300">
+              {site.trustPoints?.map((point) => (
+                <div key={`${point}-${index}`} className="rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-sm text-slate-300">
                   {point}
                 </div>
               ))}
@@ -40,7 +40,11 @@ export default function HomePage() {
               <p>Phone: {site.contact.phone}</p>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href={site.contact.whatsapp} className="rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950">
+              <a
+                href={site.contact.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Book on WhatsApp
               </a>
               <Link href="/locations/siquijor" className="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-white">
@@ -55,7 +59,6 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">Services overview</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">Each service gets its own page.</h2>
           </div>
           <Link href="/services" className="hidden text-sm font-semibold text-cyan-300 md:block">
             View all services
