@@ -35,7 +35,7 @@ export default function HomePage() {
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">{site.location.area}</h2>
             <p className="mt-4 text-sm leading-6 text-slate-300">{site.location.note}</p>
             <div className="mt-8 space-y-3 text-sm text-slate-200">
-              <p>Brand: {site.name}</p>
+              <p>Community: {site.name}</p>
               <p>Legal business name: {site.legalName}</p>
               <p>Phone: {site.contact.phone}</p>
             </div>
