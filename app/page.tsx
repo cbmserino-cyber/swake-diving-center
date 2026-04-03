@@ -19,11 +19,19 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">What Swake does</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">Intro classes, line training, guided fundives, and Molchanovs certification courses.</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+              What Swake does
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">
+              Intro classes, line training, guided fundives, and Molchanovs
+              certification courses.
+            </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {site.trustPoints?.map((point, index) => (
-                <div key={`${point}-${index}`} className="rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-sm text-slate-300">
+              {site.trustPoints?.map((point) => (
+                <div
+                  key={point} 
+                  className="rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-sm text-slate-300"
+                >
                   {point}
                 </div>
               ))}
@@ -31,9 +39,15 @@ export default function HomePage() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/15 to-slate-900 p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">Location</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">{site.location.area}</h2>
-            <p className="mt-4 text-sm leading-6 text-slate-300">{site.location.note}</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+              Location
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">
+              {site.location.area}
+            </h2>
+            <p className="mt-4 text-sm leading-6 text-slate-300">
+              {site.location.note}
+            </p>
             <div className="mt-8 space-y-3 text-sm text-slate-200">
               <p>Community: {site.name}</p>
               <p>Legal business name: {site.legalName}</p>
@@ -44,10 +58,14 @@ export default function HomePage() {
                 href={site.contact.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
               >
                 Book on WhatsApp
               </a>
-              <Link href="/locations/siquijor" className="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-white">
+              <Link
+                href="/locations/siquijor"
+                className="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-white"
+              >
                 View Location Page
               </Link>
             </div>
@@ -58,13 +76,17 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-6 py-6 lg:px-8 lg:py-10">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">Services overview</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+              Services overview
+            </p>
           </div>
-          <Link href="/services" className="hidden text-sm font-semibold text-cyan-300 md:block">
+          <Link
+            href="/services"
+            className="hidden text-sm font-semibold text-cyan-300 md:block"
+          >
             View all services
           </Link>
         </div>
-
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
             <ServiceCard key={service.slug} service={service} />
@@ -74,14 +96,29 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-3">
-          <Link href="/about" className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10">
-            <h3 className="text-xl font-semibold text-white">About Swake Freedivers</h3>
+          <Link
+            href="/about"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">
+              About Swake Freedivers
+            </h3>
           </Link>
-          <Link href="/faq" className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10">
-            <h3 className="text-xl font-semibold text-white">Frequently Asked Questions</h3>
+          <Link
+            href="/faq"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">
+              Frequently Asked Questions
+            </h3>
           </Link>
-          <Link href="/contact" className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10">
-            <h3 className="text-xl font-semibold text-white">Contact and booking</h3>
+          <Link
+            href="/contact"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">
+              Contact and booking
+            </h3>
           </Link>
         </div>
       </section>
