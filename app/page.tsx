@@ -22,7 +22,7 @@ export default function HomePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">What Swake does</p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">Intro classes, line training, guided fundives, and Molchanovs certification courses.</h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {site.trustPoints?.map((point) => (
+              {site.trustPoints?.map((point, index) => (
                 <div key={`${point}-${index}`} className="rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-sm text-slate-300">
                   {point}
                 </div>
