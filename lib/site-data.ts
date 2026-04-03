@@ -10,6 +10,58 @@ export type ServiceSummary = {
   imageAlt: string;
 };
 
+export const site = {
+  name: "Swake Freedivers Siquijor",
+  description:
+    "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
+  legalName: "Swake Dive Center",
+  contact: {
+    phone: "+63 XXX XXX XXXX",
+    email: "hello@swake.com",
+  },
+  contactLinks: [
+    {
+      label: "WhatsApp",
+      href: "https://wa.me/63XXXXXXXXXX",
+    },
+    {
+      label: "Instagram",
+      href: "https://instagram.com/yourhandle",
+    },
+    {
+      label: "Facebook",
+      href: "https://facebook.com/yourpage",
+    },
+    {
+      label: "Email",
+      href: "mailto:hello@swake.com",
+    },
+  ],
+  location: {
+    area: "Tubod, San Juan, Siquijor",
+    province: "Siquijor, Philippines",
+    note: "Meeting point and exact dive site depend on conditions for the day.",
+  },
+};
+
+export const faqs = [
+  {
+    question: "Do I need experience to join?",
+    answer:
+      "No. Intro sessions are designed for first-timers, while training and guided dives are for divers with prior experience.",
+  },
+  {
+    question: "How do you choose dive sites?",
+    answer:
+      "Sites are selected based on conditions, safety, visibility, currents, and the diver's level.",
+  },
+  {
+    question: "How do I book?",
+    answer:
+      "Send a message through WhatsApp, Instagram, Facebook, or email to confirm availability and session details.",
+  },
+];
+
 export const services: ServiceSummary[] = [
   {
     slug: "intro-to-freediving",
