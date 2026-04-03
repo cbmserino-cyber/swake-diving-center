@@ -49,7 +49,7 @@ export default function FundiveWithGuidePage() {
                 <li>Visibility → clearer sites for intro and photo dives</li>
                 <li>Monsoon → sheltered coastlines when required</li>
                 <li>Tide → affects entry, line setup, and flow</li>
-                <li>Traffic → avoiding crowding and reef pressure</li>
+                <li>Site traffic → avoiding crowding and reef pressure</li>
               </ul>
             </div>
           </div>
