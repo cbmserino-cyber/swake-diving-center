@@ -276,6 +276,11 @@ export const lineTrainingDetails: LineTrainingDetails = {
     "Supervised line dives",
     "Technique feedback after rounds",
   ],
+   exclusions: [
+    "Environmental or cottage fees",
+    "Gear rental",
+    "Transpot",
+  ],
   notes: [
     "Best for divers with previous freediving experience.",
     "Final setup depends on conditions and diver level.",
