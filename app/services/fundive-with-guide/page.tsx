@@ -5,7 +5,7 @@ import { PageHero } from "@/components/page-hero";
 import { fundiveDetails } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Fundive with Guide",
+  title: "Siquijor Fundive with Guide",
   description: "Guided fundive sessions in Siquijor with local support and up to two dive sites.",
   alternates: { canonical: "/services/fundive-with-guide" },
 };
@@ -37,7 +37,15 @@ export default function FundiveWithGuidePage() {
               </ul>
             </div>
             <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5 text-sm leading-6 text-slate-300">
-              Use this page for site notes, examples of typical conditions-based planning, and links to Dumanhog or other location pages later if you decide to expand the site architecture further.
+              Each session is planned based on actual conditions on the day.
+
+              Typical factors we consider:
+              
+              Current strength → calmer sites for beginners, more exposed areas for experienced divers
+              Visibility → clearer sites prioritized for intro sessions and photo-focused dives
+              Moonsoon → protected coastlines when needed for safety and comfort
+              Tide timing → affects entry points, line setup, and overall dive flow
+              Site traffic → avoiding crowded areas to prevent localized reef pressure
             </div>
           </div>
         </div>
