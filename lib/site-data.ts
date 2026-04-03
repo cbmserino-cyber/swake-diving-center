@@ -10,32 +10,25 @@ export type ServiceSummary = {
   imageAlt: string;
 };
 
+const contact = {
+  phone: "+63 906 629 3634",
+  email: "swakefreediver@gmail.com",
+  whatsapp: "https://wa.me/63906293634",
+  instagram: "https://www.instagram.com/swakefreedivers_siquijor",
+  facebook: "https://www.facebook.com/SwakeFreediversSiquijor",
+};
+
 export const site = {
   name: "Swake Freedivers Siquijor",
   description:
     "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
   legalName: "Swake Dive Center",
-  contact: {
-    phone: "+63 XXX XXX XXXX",
-    email: "hello@swake.com",
-  },
+  contact,
   contactLinks: [
-    {
-      label: "WhatsApp",
-      href: "https://wa.me/63XXXXXXXXXX",
-    },
-    {
-      label: "Instagram",
-      href: "https://instagram.com/yourhandle",
-    },
-    {
-      label: "Facebook",
-      href: "https://facebook.com/yourpage",
-    },
-    {
-      label: "Email",
-      href: "mailto:hello@swake.com",
-    },
+    { label: "WhatsApp", href: contact.whatsapp },
+    { label: "Instagram", href: contact.instagram },
+    { label: "Facebook", href: contact.facebook },
+    { label: "Email", href: `mailto:${contact.email}` },
   ],
   location: {
     area: "Tubod, San Juan, Siquijor",
