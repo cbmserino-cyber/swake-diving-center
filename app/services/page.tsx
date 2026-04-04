@@ -14,8 +14,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="A dedicated page for each service"
-        description="Use this route as the service index. It should summarize the offers clearly, then push visitors to the individual pages where the real pricing, schedule, inclusions, exclusions, and FAQs live."
+        title=""Freediving sessions in Siquijor"
+        description="Explore intro to freediving, line training, certification courses, and guided fundives with local, safety-first instruction in Siquijor."
       />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
