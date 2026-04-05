@@ -1,39 +1,44 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import type { ServiceSummary } from "@/lib/site-data";
 
-export function ServiceCard({ service }: { service: ServiceSummary }) {
+type ServiceCardProps = {
+  service: ServiceSummary;
+};
+
+export function ServiceCard({ service }: ServiceCardProps) {
   return (
-    <article className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
-      <div className="relative aspect-[4/3]">
+    <article className="overflow-hidden rounded-3xl border border-[#3AA0C8]/20 bg-[#050505] transition hover:border-[#3AA0C8]/40">
+      <div className="relative aspect-[16/10]">
         <Image
           src={service.image}
           alt={service.imageAlt}
           fill
           className="object-cover"
-          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
         />
       </div>
 
       <div className="p-6">
-        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#3AA0C8]">
           {service.priceLabel}
         </p>
 
-        <h3 className="mt-3 text-2xl font-bold tracking-tight text-white">
-          {service.shortTitle}
-        </h3>
+        <h2 className="mt-2 text-2xl font-semibold text-white">
+          {service.title}
+        </h2>
 
-        <p className="mt-4 text-sm leading-6 text-slate-300">
+        <p className="mt-3 text-sm leading-6 text-slate-300">
           {service.summary}
         </p>
 
-        <Link
-          href={service.href}
-          className="mt-6 inline-flex rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
-        >
-          {service.ctaLabel}
-        </Link>
+        <div className="mt-5">
+          <Link
+            href={service.href}
+            className="inline-flex rounded-full bg-[#F15A24] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FF6A3A]"
+          >
+            {service.ctaLabel}
+          </Link>
+        </div>
       </div>
     </article>
   );
