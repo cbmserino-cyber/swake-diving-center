@@ -61,7 +61,7 @@ const contact = {
   email: "swakefreediver@gmail.com",
   whatsapp: "https://api.whatsapp.com/send?phone=639066293634",
   instagram: "https://www.instagram.com/direct/t/17842367781054987/",
-  facebook: "https://www.messenger.com/t/115348667850263r",
+  facebook: "https://www.messenger.com/t/115348667850263",
 };
 
 export const site = {
