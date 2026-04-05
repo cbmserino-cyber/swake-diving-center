@@ -1,37 +1,45 @@
-type PageHeroProps = {
-  eyebrow?: string;
-  title: string;
-  description: string;
-  kicker?: string;
+import Link from "next/link";
+import Image from "next/image";
+import type { ServiceSummary } from "@/lib/site-data";
+
+type ServiceCardProps = {
+  service: ServiceSummary;
 };
 
-export function PageHero({
-  eyebrow,
-  title,
-  description,
-  kicker,
-}: PageHeroProps) {
+export function ServiceCard({ service }: ServiceCardProps) {
   return (
-    <section className="border-b border-[#3AA0C8]/20 bg-black">
-      <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8 lg:py-20">
-        {eyebrow ? (
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#3AA0C8]">
-            {eyebrow}
-          </p>
-        ) : null}
+    <article className="overflow-hidden rounded-3xl border border-[#3AA0C8]/20 bg-[#050505] transition hover:border-[#3AA0C8]/40">
+      <div className="relative aspect-[16/10]">
+        <Image
+          src={service.image}
+          alt={service.imageAlt}
+          fill
+          className="object-cover"
+        />
+      </div>
 
-        <h1 className="mt-3 max-w-4xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
-          {title}
-        </h1>
-
-        <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300">
-          {description}
+      <div className="p-6">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#3AA0C8]">
+          {service.priceLabel}
         </p>
 
-        {kicker ? (
-          <p className="mt-5 text-sm font-medium text-[#F15A24]">{kicker}</p>
-        ) : null}
+        <h2 className="mt-2 text-2xl font-semibold text-white">
+          {service.title}
+        </h2>
+
+        <p className="mt-3 text-sm leading-6 text-slate-300">
+          {service.summary}
+        </p>
+
+        <div className="mt-5">
+          <Link
+            href={service.href}
+            className="inline-flex rounded-full bg-[#F15A24] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FF6A3A]"
+          >
+            {service.ctaLabel}
+          </Link>
+        </div>
       </div>
-    </section>
+    </article>
   );
 }
