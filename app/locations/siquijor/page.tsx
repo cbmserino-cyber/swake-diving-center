@@ -13,7 +13,7 @@ export default function SiquijorLocationPage() {
     <>
       <PageHero
         eyebrow="Location"
-        title="Sawang Point,Brgy. Tubod, San Juan, Siquijor"
+        title="Sawang Point, Brgy. Tubod, San Juan, Siquijor"
       />
 
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
@@ -34,9 +34,6 @@ export default function SiquijorLocationPage() {
               </li>
               <li>
                 Once your session is confirmed, we’ll send the exact location pin, recommended arrival time, and what to bring.
-              </li>
-              <li>
-                We recommend arriving 10–15 minutes early to allow time for briefing and preparation.
               </li>
               <li>
                 If your session includes transport to dive sites, this will be coordinated in advance.
