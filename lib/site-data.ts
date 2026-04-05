@@ -64,6 +64,13 @@ const contact = {
   facebook: "https://www.messenger.com/t/115348667850263",
 };
 
+const contactColors: Record<string, string> = {
+  WhatsApp: "text-[#25D366]",
+  Instagram: "text-[#E4405F]",
+  Facebook: "text-[#1877F2]",
+  Email: "text-slate-300",
+};
+
 export const site = {
   name: "Swake Freedivers Siquijor",
   description:
