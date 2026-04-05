@@ -20,7 +20,7 @@ export default function SiquijorLocationPage() {
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold text-white">Core location details</h2>
+            <h2 className="text-2xl font-semibold text-white">HQ location</h2>
             <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
               <p>{site.location.area}</p>
               <p>{site.location.province}</p>
@@ -30,10 +30,27 @@ export default function SiquijorLocationPage() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h2 className="text-2xl font-semibold text-white">Suggested content blocks</h2>
             <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
-              <li>Meeting point and arrival notes</li>
-              <li>Why Tubod and San Juan are relevant for beginners and training</li>
-              <li>Conditions-based site selection</li>
-              <li>Nearby site mentions such as Dumanhog when relevant to guided packages</li>
+              <li>
+                Our meeting point is in Sawang, Brgy. Tubod, San Juan during Amihan, and in Dumanhog, Siquijor during Habagat. Both locations are accessible and close to most accommodations.
+              </li>
+              <li>
+                Once your session is confirmed, we’ll send the exact location pin, recommended arrival time, and what to bring.
+              </li>
+              <li>
+                We recommend arriving 10–15 minutes early to allow time for briefing and preparation.
+              </li>
+              <li>
+                If your session includes transport to dive sites, this will be coordinated in advance.
+              </li>
+              <li>
+                Sawang and Dumanhog are commonly used for beginner sessions due to easier access and generally manageable conditions.
+              </li>
+              <li>
+                Dive sites are selected daily based on current, visibility, weather, and overall safety.
+              </li>
+              <li>
+                Other areas may be used for deeper or training-focused sessions when conditions allow.
+              </li>
             </ul>
           </div>
         </div>
