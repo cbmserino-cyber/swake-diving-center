@@ -14,9 +14,16 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Message us via WhatsApp, Instagram, or Facebook to book a session or ask about availability."
+        title={
+          <>
+            Message us via{" "}
+            <span className="text-[#25D366]">WhatsApp</span>,{" "}
+            <span className="text-[#E4405F]">Instagram</span>, or{" "}
+            <span className="text-[#1877F2]">Facebook</span>{" "}
+            to book a session or ask about availability.
+          </>
+        }
       />
-
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-3xl border border-[#3AA0C8]/20 bg-[#050505] p-8">
