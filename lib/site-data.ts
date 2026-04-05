@@ -59,7 +59,7 @@ export type LineTrainingDetails = {
 const contact = {
   phone: "+63 906 629 3634",
   email: "swakefreediver@gmail.com",
-  whatsapp: "https://wa.me/63906293634",
+  whatsapp: "https://wa.me/639066293634",
   instagram: "https://www.instagram.com/swakefreedivers_siquijor",
   facebook: "https://www.facebook.com/SwakeFreediversSiquijor",
 };
@@ -68,7 +68,7 @@ export const site = {
   name: "Swake Freedivers Siquijor",
   description:
     "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
-  legalName: "Swake Dive Center",
+  legalName: "Swake Diving Center",
   baseUrl: swakefreedivers.com",
   contact,
   contactLinks: [
