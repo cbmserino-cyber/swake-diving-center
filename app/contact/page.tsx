@@ -36,7 +36,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="rounded-2xl border border-[#3AA0C8]/20 bg-black/60 p-4 transition hover:border-[#3AA0C8] hover:bg-black"
               >
-                WhatsApp: {site.contact.phone}
+                <span className="text-[#25D366]">WhatsApp:</span> {site.contact.phone}
               </a>
 
               <a
@@ -45,7 +45,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="rounded-2xl border border-[#3AA0C8]/20 bg-black/60 p-4 transition hover:border-[#3AA0C8] hover:bg-black"
               >
-                Instagram: @swakefreedivers_siquijor
+                <span className="text-[#E4405F]">Instagram:</span> @swakefreedivers_siquijor
               </a>
 
               <a
@@ -54,7 +54,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="rounded-2xl border border-[#3AA0C8]/20 bg-black/60 p-4 transition hover:border-[#3AA0C8] hover:bg-black"
               >
-                Facebook: @SwakeFreediversSiquijor
+                <span className="text-[#1877F2]">Facebook:</span> @SwakeFreediversSiquijor
               </a>
 
               <a
