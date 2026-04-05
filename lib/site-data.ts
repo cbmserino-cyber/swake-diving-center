@@ -59,7 +59,7 @@ export type LineTrainingDetails = {
 const contact = {
   phone: "+63 906 629 3634",
   email: "swakefreediver@gmail.com",
-  whatsapp: "https://wa.me/639066293634",
+  whatsapp: "https://api.whatsapp.com/send?phone=639066293634",
   instagram: "https://www.instagram.com/swakefreedivers_siquijor",
   facebook: "https://www.facebook.com/SwakeFreediversSiquijor",
 };
