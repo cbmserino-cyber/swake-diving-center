@@ -69,7 +69,7 @@ export const site = {
   description:
     "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
   legalName: "Swake Diving Center",
-  baseUrl: "swakefreedivers.com",
+  baseUrl: "https://swakefreedivers.com",
   contact,
   contactLinks: [
     { label: "WhatsApp", href: contact.whatsapp },
