@@ -1,6 +1,6 @@
 type PageHeroProps = {
   eyebrow?: string;
-  title: string;
+  title: React.ReactNode;
   description?: string;
   kicker?: string;
 };
