@@ -60,8 +60,8 @@ const contact = {
   phone: "+63 906 629 3634",
   email: "swakefreediver@gmail.com",
   whatsapp: "https://api.whatsapp.com/send?phone=639066293634",
-  instagram: "https://www.instagram.com/swakefreedivers_siquijor",
-  facebook: "https://www.facebook.com/SwakeFreediversSiquijor",
+  instagram: "https://www.instagram.com/direct/t/17842367781054987/",
+  facebook: "https://www.messenger.com/t/115348667850263r",
 };
 
 export const site = {
