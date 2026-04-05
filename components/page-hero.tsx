@@ -29,9 +29,7 @@ export function PageHero({
         </p>
 
         {kicker ? (
-          <p className="mt-5 text-sm font-medium text-[#F15A24]">
-            {kicker}
-          </p>
+          <p className="mt-5 text-sm font-medium text-[#F15A24]">{kicker}</p>
         ) : null}
       </div>
     </section>
