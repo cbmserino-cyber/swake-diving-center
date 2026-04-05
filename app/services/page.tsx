@@ -14,7 +14,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title=""Freediving sessions in Siquijor"
+        title="Freediving sessions in Siquijor"
         description="Explore intro to freediving, line training, certification courses, and guided fundives with local, safety-first instruction in Siquijor."
       />
 
