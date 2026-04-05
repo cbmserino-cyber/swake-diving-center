@@ -1,10 +1,21 @@
 import { site } from "@/lib/site-data";
 
+const contactStyles: Record<string, string> = {
+  WhatsApp:
+    "border-[#25D366]/40 bg-[#25D366]/10 text-[#25D366] hover:bg-[#25D366]/20",
+  Instagram:
+    "border-[#E4405F]/40 bg-[#E4405F]/10 text-[#E4405F] hover:bg-[#E4405F]/20",
+  Facebook:
+    "border-[#1877F2]/40 bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2]/20",
+  Email:
+    "border-[#3AA0C8]/40 bg-[#3AA0C8]/10 text-[#3AA0C8] hover:bg-[#3AA0C8]/20",
+};
+
 export function CtaStrip() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-12 lg:px-8">
-      <div className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+      <div className="rounded-[2rem] border border-[#3AA0C8]/20 bg-[#050505] p-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#3AA0C8]">
           Book with Swake
         </p>
 
@@ -25,7 +36,7 @@ export function CtaStrip() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+              className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${contactStyles[link.label]}`}
             >
               {link.label}
             </a>
