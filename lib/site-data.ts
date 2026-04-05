@@ -279,7 +279,7 @@ export const lineTrainingDetails: LineTrainingDetails = {
    exclusions: [
     "Environmental or cottage fees",
     "Gear rental",
-    "Transpot",
+    "Transport",
   ],
   notes: [
     "Best for divers with previous freediving experience.",
