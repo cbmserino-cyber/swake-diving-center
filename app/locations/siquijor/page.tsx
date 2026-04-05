@@ -13,8 +13,7 @@ export default function SiquijorLocationPage() {
     <>
       <PageHero
         eyebrow="Location"
-        title="Tubod, San Juan, Siquijor"
-        description="Meeting point depends on the season and water conditions, usually either our HQ or Dumanhog."
+        title="Sawang Point,Brgy. Tubod, San Juan, Siquijor"
       />
 
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
@@ -28,7 +27,7 @@ export default function SiquijorLocationPage() {
             </div>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold text-white">Suggested content blocks</h2>
+            <h2 className="text-2xl font-semibold text-white">Notes</h2>
             <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
               <li>
                 Our meeting point is in Sawang, Brgy. Tubod, San Juan during Amihan, and in Dumanhog, Siquijor during Habagat. Both locations are accessible and close to most accommodations.
