@@ -17,8 +17,8 @@ const navItems = [
 
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50">
-      <header className="sticky top-0 z-30 border-b border-sky-900/30 bg-slate-950/90 backdrop-blur">
+    <div className="min-h-screen bg-black text-white">
+      <header className="sticky top-0 z-30 border-b border-[#3AA0C8]/20 bg-black/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
           <Link href="/" className="flex min-w-0 items-center gap-3">
             <Image
@@ -31,7 +31,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
             />
 
             <div className="min-w-0 leading-tight">
-              <p className="truncate text-sm font-semibold uppercase tracking-[0.24em] text-sky-300">
+              <p className="truncate text-sm font-semibold uppercase tracking-[0.24em] text-[#3AA0C8]">
                 Swake
               </p>
               <p className="truncate text-xs text-slate-400">
@@ -45,7 +45,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm text-slate-300 transition hover:text-sky-200"
+                className="text-sm text-slate-300 transition hover:text-[#3AA0C8]"
               >
                 {item.label}
               </Link>
@@ -56,7 +56,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
             href={site.contact.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-sky-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-sky-300"
+            className="rounded-full bg-[#F15A24] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FF6A3A]"
           >
             Book Now
           </a>
@@ -65,10 +65,10 @@ export function SiteLayout({ children }: SiteLayoutProps) {
 
       <main>{children}</main>
 
-      <footer className="border-t border-sky-900/30 bg-slate-950">
+      <footer className="border-t border-[#3AA0C8]/20 bg-black">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-300">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#3AA0C8]">
               {site.name}
             </p>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">
@@ -84,7 +84,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
               href={site.contact.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:text-sky-200"
+              className="transition hover:text-[#3AA0C8]"
             >
               WhatsApp: {site.contact.phone}
             </a>
@@ -92,7 +92,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
               href={site.contact.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:text-sky-200"
+              className="transition hover:text-[#3AA0C8]"
             >
               Instagram
             </a>
@@ -100,7 +100,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
               href={site.contact.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:text-sky-200"
+              className="transition hover:text-[#3AA0C8]"
             >
               Facebook
             </a>
@@ -108,7 +108,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
               href={`mailto:${site.contact.email}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:text-sky-200"
+              className="transition hover:text-[#3AA0C8]"
             >
               {site.contact.email}
             </a>
