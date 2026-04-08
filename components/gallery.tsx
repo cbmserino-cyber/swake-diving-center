@@ -85,52 +85,8 @@ export function Gallery({ images }: GalleryProps) {
             </button>
           ))}
         </div>
-            </button>
-
-            {images.length > 1 && (
-              <>
-                <button
-                  type="button"
-                  onClick={showPrev}
-                  className="absolute left-3 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/50 px-4 py-3 text-white"
-                  aria-label="Previous image"
-                >
-                  ‹
-                </button>
-                <button
-                  type="button"
-                  onClick={showNext}
-                  className="absolute right-3 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/50 px-4 py-3 text-white"
-                  aria-label="Next image"
-                >
-                  ›
-                </button>
-              </>
-            )}
-
-            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full border border-white/20 bg-black/50 px-4 py-2 text-sm text-white">
-              {activeIndex + 1} / {images.length}
-            </div>
-          </div>
-
-          {images.length > 1 && (
-            <div className="flex justify-center gap-2">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  onClick={() => setActiveIndex(index)}
-                  className={`h-2.5 w-2.5 rounded-full transition ${
-                    index === activeIndex ? "bg-cyan-300" : "bg-white/30"
-                  }`}
-                  aria-label={`Go to image ${index + 1}`}
-                />
-              ))}
-            </div>
-          )}
-        </div>
       </section>
-
+  
       {lightboxOpen && (
         <div
           className="fixed inset-0 z-50 bg-black/90"
@@ -150,7 +106,7 @@ export function Gallery({ images }: GalleryProps) {
             >
               Close
             </button>
-
+  
             {images.length > 1 && (
               <>
                 <button
@@ -160,7 +116,6 @@ export function Gallery({ images }: GalleryProps) {
                     showPrev();
                   }}
                   className="absolute left-3 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/50 px-4 py-3 text-white"
-                  aria-label="Previous image"
                 >
                   ‹
                 </button>
@@ -171,13 +126,12 @@ export function Gallery({ images }: GalleryProps) {
                     showNext();
                   }}
                   className="absolute right-3 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/50 px-4 py-3 text-white"
-                  aria-label="Next image"
                 >
                   ›
                 </button>
               </>
             )}
-
+  
             <div
               className="relative h-[75vh] w-full max-w-6xl"
               onClick={(e) => e.stopPropagation()}
@@ -191,7 +145,7 @@ export function Gallery({ images }: GalleryProps) {
                 priority
               />
             </div>
-
+  
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full border border-white/20 bg-black/50 px-4 py-2 text-sm text-white">
               {activeIndex + 1} / {images.length}
             </div>
