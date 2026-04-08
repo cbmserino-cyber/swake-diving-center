@@ -197,11 +197,7 @@ export const services: ServiceSummary[] = [
     href: "/services/courses",
     image: "/gallery/intro-1.png",
     imageAlt: "Freediving course session in Siquijor",
-    gallery: [
-        "/images/courses/1.jpg",
-        "/images/courses/2.jpg",
-        "/images/courses/3.jpg",
-      ],
+    gallery: [],
   },
 ];
 
@@ -225,11 +221,7 @@ export const courseCards: CourseCard[] = [
     ],
     note:
       "Exact structure depends on conditions, student pace, and certification standards.",
-    gallery: [
-      "/images/courses/1.jpg",
-      "/images/courses/2.jpg",
-      "/images/courses/3.jpg",
-    ],
+    gallery: [],
   },
   {
     title: "Molchanovs Wave 2",
@@ -247,18 +239,10 @@ export const courseCards: CourseCard[] = [
       "Rescue and safety progression",
       "Depth-specific coaching",
       "Structured performance feedback",
-    ], gallery: [
-    "/images/courses/1.jpg",
-    "/images/courses/2.jpg",
-    "/images/courses/3.jpg",
-  ],
+    ],
     note:
       "Best suited to divers who already have a solid foundation and want guided progression.",
-    gallery: [
-      "/images/courses/1.jpg",
-      "/images/courses/2.jpg",
-      "/images/courses/3.jpg",
-    ],
+    gallery: [],
   },
 ];
 
@@ -289,9 +273,9 @@ export const introDetails: IntroDetails = {
     "Message first to confirm schedule and inclusions.",
   ],
   gallery: [
-    "/images/intro/1.jpg",
-    "/images/intro/2.jpg",
-    "/images/intro/3.jpg",
+    "/images/intro/1.JPG",
+    "/images/intro/2.png",
+    "/images/intro/3.jpeg",
   ],
 };
 
@@ -323,9 +307,20 @@ export const fundiveDetails: FundiveDetails = {
     "Site choice depends on current, visibility, monsoon, tide, and traffic.",
   ],
   gallery: [
-    "/images/fundive/1.jpg",
-    "/images/fundive/2.jpg",
-    "/images/fundive/3.jpg",
+    "/images/fundive/1.JPG",
+    "/images/fundive/2.png",
+    "/images/fundive/3.png",
+    "/images/fundive/4.png",
+    "/images/fundive/5.jpg",
+    "/images/fundive/6.jpg",
+    "/images/fundive/7.jpg",
+    "/images/fundive/8.jpg",
+    "/images/fundive/9.jpg",
+    "/images/fundive/10.jpg",
+    "/images/fundive/11.JPG",
+    "/images/fundive/12.jpg",
+    "/images/fundive/13.png",
+    "/images/fundive/14.png",
   ],
 };
 
@@ -356,8 +351,11 @@ export const lineTrainingDetails: LineTrainingDetails = {
     "Final setup depends on conditions and diver level.",
   ],
   gallery: [
-    "/images/linetraining/1.jpg",
-    "/images/linetraining/2.jpg",
-    "/images/linetraining/3.jpg",
+    "/images/linetraining/1.png",
+    "/images/linetraining/2.JPG",
+    "/images/linetraining/3.png",
+    "/images/linetraining/4.png",
+    "/images/linetraining/5.png",
+    "/images/linetraining/6.png",
   ],
 };
