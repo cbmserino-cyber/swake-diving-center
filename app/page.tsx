@@ -54,7 +54,7 @@ export default function HomePage() {
             <p className="mt-4 text-sm leading-6 font-medium text-[#F15A24] tracking-wide">
               {site.location.note}
             </p>
-            <div className="mt-8 space-y-3 text-sm text-slate-200">
+            <div className="mt-2 space-y-3 text-sm text-slate-200">
               <p>Community: {site.name}</p>
               <p>Business name: {site.legalName}</p>
               <p>Phone: {site.contact.phone}</p>
@@ -118,7 +118,7 @@ export default function HomePage() {
             href="/contact"
             className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center transition hover:bg-white/10"
           >
-            <h3 className="text-base font-semibold text-white">Contact</h3>
+            <h3 className="text-base font-semibold text-white">Contact Us</h3>
           </Link>
         </div>
       </section>
