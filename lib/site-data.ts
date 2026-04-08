@@ -197,6 +197,11 @@ export const services: ServiceSummary[] = [
     href: "/services/courses",
     image: "/gallery/intro-1.png",
     imageAlt: "Freediving course session in Siquijor",
+    gallery: [
+        "/images/courses/1.jpg",
+        "/images/courses/2.jpg",
+        "/images/courses/3.jpg",
+      ],
   },
 ];
 
@@ -242,7 +247,11 @@ export const courseCards: CourseCard[] = [
       "Rescue and safety progression",
       "Depth-specific coaching",
       "Structured performance feedback",
-    ],
+    ], gallery: [
+    "/images/courses/1.jpg",
+    "/images/courses/2.jpg",
+    "/images/courses/3.jpg",
+  ],
     note:
       "Best suited to divers who already have a solid foundation and want guided progression.",
     gallery: [
