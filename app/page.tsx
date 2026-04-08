@@ -21,6 +21,7 @@ export default function HomePage() {
           <span className="text-sm font-medium text-cyan-300 tracking-wide">
             Calm, unhurried learning.
           </span>
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
