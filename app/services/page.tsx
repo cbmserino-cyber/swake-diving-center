@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { ServiceCard } from "@/components/service-card";
-import { services, introDetails } from "@/lib/site-data";
 import { Gallery } from "@/components/gallery";
+import { services, introDetails } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Overview of intro to freediving, fundive with guide, line training, and Molchanovs courses in Siquijor.",
+  description:
+    "Overview of intro to freediving, fundive with guide, line training, and Molchanovs courses in Siquijor.",
   alternates: { canonical: "/services" },
 };
 
@@ -24,7 +25,7 @@ export default function ServicesPage() {
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 md:grid-cols-2">
           {services.map((service) => (
-            <ServiceCard key={service.slug??} service={service} />
+            <ServiceCard key={service.slug} service={service} />
           ))}
         </div>
       </section>
