@@ -67,6 +67,7 @@ export function Gallery({ images }: GalleryProps) {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {images.map((src, index) => (
             <button
+              type="button"
               key={index}
               onClick={() => {
                 setActiveIndex(index);
@@ -80,6 +81,7 @@ export function Gallery({ images }: GalleryProps) {
                   alt={`Gallery image ${index + 1}`}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
             </button>
