@@ -62,7 +62,7 @@ export default function HomePage() {
             </p>
             <div className="mt-8 space-y-3 text-sm text-slate-200">
               <p>Community: {site.name}</p>
-              <p>Legal business name: {site.legalName}</p>
+              <p>Business name: {site.legalName}</p>
               <p>Phone: {site.contact.phone}</p>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
