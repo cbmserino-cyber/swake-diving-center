@@ -5,19 +5,22 @@ type GalleryProps = {
 };
 
 export function Gallery({ images }: GalleryProps) {
+  if (!images?.length) return null;
+
   return (
-    <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
-      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    <section className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {images.map((src, i) => (
           <div
-            key={i}
-            className="relative aspect-[4/3] overflow-hidden rounded-2xl"
+            key={`${src}-${i}`}
+            className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/10"
           >
             <Image
               src={src}
-              alt={`Gallery image ${i + 1}`}
+              alt=""
               fill
-              className="object-cover transition hover:scale-105"
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         ))}
