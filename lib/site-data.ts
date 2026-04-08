@@ -92,7 +92,7 @@ export const site = {
   location: {
     area: "Tubod, San Juan, Siquijor",
     province: "Siquijor, Philippines",
-    note: "Exact dive site depend on conditions for the day.",
+    note: "Exact dive sites depend on conditions for the day.",
   },
   trustPoints: [
     "Calm, unhurried learning.",
