@@ -20,6 +20,10 @@ export default function FundiveWithGuidePage() {
         kicker={`${fundiveDetails.schedule} · ${fundiveDetails.minRequirement}`}
       />
 
+      {fundiveDetails.gallery.length > 0 && (
+        <Gallery images={fundiveDetails.gallery} />
+      )}
+
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="grid gap-6">
