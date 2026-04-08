@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { CtaStrip } from "@/components/cta-strip";
 import { DetailList } from "@/components/detail-list";
+import { Gallery } from "@/components/gallery";
 import { PageHero } from "@/components/page-hero";
 import { fundiveDetails } from "@/lib/site-data";
-import { Gallery } from "@/components/gallery";
 
 export const metadata: Metadata = {
   title: "Siquijor Fundive with Guide",
-  description: "Guided fundive sessions in Siquijor with local support and up to two dive sites.",
+  description:
+    "Guided fundive sessions in Siquijor with local support and up to two dive sites.",
   alternates: { canonical: "/services/fundive-with-guide" },
 };
 
@@ -46,9 +47,7 @@ export default function FundiveWithGuidePage() {
 
             <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5 text-sm leading-6 text-slate-300">
               <p>Each session is planned based on actual conditions on the day.</p>
-
               <p className="mt-3">Typical factors we consider:</p>
-
               <ul className="mt-2 list-disc list-inside space-y-1">
                 <li>Current → site exposure matched to experience level</li>
                 <li>Visibility → clearer sites for intro and photo dives</li>
