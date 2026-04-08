@@ -13,11 +13,11 @@ export default function HomePage() {
         eyebrow=""
         title="Local, safety-first freediving in Siquijor"
         description="Freediving in Siquijor for first-timers and experienced divers, focused on safety, comfort, and steady progress"
-       kicker={
-        <span className="text-sm font-medium text-cyan-300 tracking-wide">
-          Calm, unhurried learning.
-        </span>
-}
+        kicker={
+          <span className="text-sm font-medium text-cyan-300 tracking-wide">
+            Calm, unhurried learning.
+          </span>
+  }
       />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
