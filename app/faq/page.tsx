@@ -14,7 +14,6 @@ export default function FaqPage() {
       <PageHero
         eyebrow="FAQ"
         title="Common questions before people book"
-        description="Move the practical objections and first-timer concerns out of the homepage and into a dedicated FAQ route that can also be linked from social posts and direct inquiries."
       />
 
       <section className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
@@ -28,5 +27,7 @@ export default function FaqPage() {
         </div>
       </section>
     </>
+
+  
   );
 }
