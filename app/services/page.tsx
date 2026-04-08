@@ -23,9 +23,12 @@ export default function ServicesPage() {
       <Gallery images={introDetails.gallery} />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="space-y-12">
           {services.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
+            <div key={service.slug} className="space-y-4">
+              <ServiceCard service={service} />
+              <Gallery images={service.gallery} />
+            </div>
           ))}
         </div>
       </section>
