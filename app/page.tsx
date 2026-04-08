@@ -13,12 +13,17 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-6 pt-16 lg:px-8">
         <PageHero
           eyebrow=""
-          title="Local, safety-first freediving in Siquijor"
+          title={
+            <>
+              Local, safety-first freediving in{" "}
+              <span className="font-bold text-[#F15A24]">Siquijor</span>
+            </>
+          }
           description="Freediving in Siquijor for first-timers and experienced divers, with a focus on safety, comfort, technique, and steady progress."
         />
 
         <div className="mt-4">
-          <span className="text-sm font-medium text-cyan-300 tracking-wide">
+          <span className="text-sm font-medium text-[#F15A24] tracking-wide">
             Calm, unhurried learning.
           </span>
         </div>
