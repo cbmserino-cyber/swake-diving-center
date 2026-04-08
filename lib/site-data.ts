@@ -95,7 +95,7 @@ export const site = {
     note: "Meeting point and exact dive site depend on conditions for the day.",
   },
   trustPoints: [
-    "Local, safety-first instruction based in Siquijor.",
+    "Calm, unhurried learning.",
     "Sessions are planned around actual sea conditions and diver level.",
     "Suitable for first-timers, returning divers, and progressing students.",
     "Progression is kept steady and not rushed.",
