@@ -17,7 +17,7 @@ export default function HomePage() {
           <span className="text-sm italic text-slate-300">
             Calm, unhurried learning.
           </span>
-}
+        }
       />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
