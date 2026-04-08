@@ -20,8 +20,6 @@ export default function ServicesPage() {
         description="Explore intro to freediving, line training, certification courses, and guided fundives with local, safety-first instruction in Siquijor."
       />
 
-      <Gallery images={introDetails.gallery} />
-
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="space-y-12">
           {services.map((service) => (
