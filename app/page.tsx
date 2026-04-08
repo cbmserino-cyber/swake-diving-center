@@ -9,16 +9,21 @@ export default function HomePage() {
   return (
     <>
       <LocalBusinessJsonLd />
-      <PageHero
-        eyebrow=""
-        title="Local, safety-first freediving in Siquijor"
-        description="Freediving in Siquijor for first-timers and experienced divers, with a focus on safety, comfort, technique, and steady progress."
-        kicker={
+
+      <section className="mx-auto max-w-6xl px-6 pt-16 lg:px-8">
+        <PageHero
+          eyebrow=""
+          title="Local, safety-first freediving in Siquijor"
+          description="Freediving in Siquijor for first-timers and experienced divers, with a focus on safety, comfort, technique, and steady progress."
+          kicker="Calm, unhurried learning."
+        />
+
+        <div className="mt-4">
           <span className="text-sm italic text-slate-300">
             Calm, unhurried learning.
           </span>
-        }
-      />
+        </div>
+      </section>
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
