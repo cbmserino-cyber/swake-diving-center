@@ -22,8 +22,6 @@ export default function IntroToFreedivingPage() {
         kicker={`${introDetails.schedule} · ${introDetails.price}`}
       />
 
-       <Gallery images={introDetails.gallery} />
-
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
