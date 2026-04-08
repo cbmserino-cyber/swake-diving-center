@@ -15,7 +15,7 @@ export default function HomePage() {
           eyebrow=""
           title={
             <>
-              Local, safety-first freediving in{" "}
+              <span className="font-bold text-cyan-300">Local, safety-first freediving in{" "}</span>
               <span className="font-bold text-[#F15A24]">Siquijor</span>
             </>
           }
