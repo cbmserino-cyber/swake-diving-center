@@ -27,7 +27,7 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
-              What Swake offers
+              What we offer
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">
               Intro classes, line training, guided fundives, and Molchanovs courses.
@@ -51,7 +51,7 @@ export default function HomePage() {
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">
               {site.location.area}
             </h2>
-            <p className="mt-4 text-sm leading-6 text-slate-300">
+            <p className="mt-4 text-sm leading-6 font-medium text-[#F15A24] tracking-wide">
               {site.location.note}
             </p>
             <div className="mt-8 space-y-3 text-sm text-slate-200">
@@ -100,25 +100,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-3">
+      <section className="mx-auto max-w-3xl px-6 py-10">
+        <div className="grid gap-4 sm:grid-cols-3">
           <Link
             href="/about"
-            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+            className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">About Swake</h3>
+            <h3 className="text-base font-semibold text-white">About Us</h3>
           </Link>
           <Link
             href="/faq"
-            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+            className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">FAQ</h3>
+            <h3 className="text-base font-semibold text-white">FAQ</h3>
           </Link>
           <Link
             href="/contact"
-            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+            className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Contact</h3>
+            <h3 className="text-base font-semibold text-white">Contact</h3>
           </Link>
         </div>
       </section>
