@@ -12,14 +12,13 @@ export default function HomePage() {
       <PageHero
         eyebrow=""
         title="Local, safety-first freediving in Siquijor"
-        description="Freediving in Siquijor for first-timers and experienced divers, focused on safety, comfort, and steady progress"
+        description="Freediving in Siquijor for first-timers and experienced divers, with a focus on safety, comfort, and steady progress."
         kicker={
-          <span className="text-sm font-medium text-cyan-300 tracking-wide">
+          <span className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/90">
             Calm, unhurried learning.
           </span>
         }
       />
-
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
