@@ -12,13 +12,10 @@ export default function HomePage() {
       <PageHero
         eyebrow=""
         title="Local, safety-first freediving in Siquijor"
-        description="Freediving in Siquijor for first-timers and experienced divers, with a focus on safety, comfort, and steady progress."
-        kicker={
-          <span className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/90">
-            Calm, unhurried learning.
-          </span>
-        }
+        description="Freediving in Siquijor for first-timers and experienced divers, with a focus on safety, comfort, technique, and steady progress."
+        kicker="Calm, unhurried learning."
       />
+
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
@@ -31,7 +28,7 @@ export default function HomePage() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {site.trustPoints?.map((point) => (
                 <div
-                  key={point} 
+                  key={point}
                   className="rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-sm text-slate-300"
                 >
                   {point}
@@ -102,25 +99,19 @@ export default function HomePage() {
             href="/about"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">
-              About Swake
-            </h3>
+            <h3 className="text-xl font-semibold text-white">About Swake</h3>
           </Link>
           <Link
             href="/faq"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">
-              FAQ
-            </h3>
+            <h3 className="text-xl font-semibold text-white">FAQ</h3>
           </Link>
           <Link
             href="/contact"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">
-              Contact
-            </h3>
+            <h3 className="text-xl font-semibold text-white">Contact</h3>
           </Link>
         </div>
       </section>
