@@ -3,6 +3,7 @@ import { CtaStrip } from "@/components/cta-strip";
 import { DetailList } from "@/components/detail-list";
 import { PageHero } from "@/components/page-hero";
 import { fundiveDetails } from "@/lib/site-data";
+import { Gallery } from "@/components/gallery";
 
 export const metadata: Metadata = {
   title: "Siquijor Fundive with Guide",
