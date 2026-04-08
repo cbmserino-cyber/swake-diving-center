@@ -12,19 +12,22 @@ export default function HomePage() {
       <PageHero
         eyebrow=""
         title="Local, safety-first freediving in Siquijor"
-        description="Safe, guided freediving sessions in Siquijor for first-timers and experienced divers, with a focus on comfort, technique, and steady progression."
-        kicker="Calm and unhurried learning."
+        description="Freediving in Siquijor for first-timers and experienced divers, focused on safety, comfort, and steady progress"
+       kicker={
+        <span className="text-sm font-medium text-cyan-300 tracking-wide">
+          Calm, unhurried learning.
+        </span>
+}
       />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
-              What Swake does
+              What Swake offers
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">
-              Intro classes, line training, guided fundives, and Molchanovs
-              certification courses.
+              Intro classes, line training, guided fundives, and Molchanovs courses.
             </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {site.trustPoints?.map((point) => (
@@ -77,7 +80,7 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
-              Services overview
+              Services
             </p>
           </div>
           <Link
@@ -101,7 +104,7 @@ export default function HomePage() {
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">
-              About Swake Freedivers
+              About Swake
             </h3>
           </Link>
           <Link
@@ -109,7 +112,7 @@ export default function HomePage() {
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">
-              Frequently Asked Questions
+              FAQ
             </h3>
           </Link>
           <Link
@@ -117,7 +120,7 @@ export default function HomePage() {
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">
-              Contact and booking
+              Contact
             </h3>
           </Link>
         </div>
