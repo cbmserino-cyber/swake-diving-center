@@ -3,6 +3,8 @@ import { CtaStrip } from "@/components/cta-strip";
 import { DetailList } from "@/components/detail-list";
 import { PageHero } from "@/components/page-hero";
 import { introDetails } from "@/lib/site-data";
+import { Gallery } from "@/components/gallery";
+
 
 export const metadata: Metadata = {
   title: "Intro to Freediving",
@@ -19,6 +21,8 @@ export default function IntroToFreedivingPage() {
         description={introDetails.summary}
         kicker={`${introDetails.schedule} · ${introDetails.price}`}
       />
+
+       <Gallery images={introDetails.gallery} />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
