@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { ServiceCard } from "@/components/service-card";
-import { services } from "@/lib/site-data";
+import { services, introDetails } from "@/lib/site-data";
 import { Gallery } from "@/components/gallery";
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function ServicesPage() {
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 md:grid-cols-2">
           {services.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
+            <ServiceCard key={service.slug??} service={service} />
           ))}
         </div>
       </section>
