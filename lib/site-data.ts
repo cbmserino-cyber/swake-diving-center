@@ -8,6 +8,7 @@ export type ServiceSummary = {
   href: string;
   image: string;
   imageAlt: string;
+  gallery: string[];
 };
 
 export type CourseCard = {
@@ -131,6 +132,11 @@ export const services: ServiceSummary[] = [
     href: "/services/intro-to-freediving",
     image: "/gallery/intro-1.JPG",
     imageAlt: "Intro to freediving session in Siquijor",
+    gallery: [
+      "/images/intro/1.JPG",
+      "/images/intro/2.png",
+      "/images/intro/3.jpeg",
+    ],
   },
   {
     slug: "fundive-with-guide",
@@ -143,6 +149,22 @@ export const services: ServiceSummary[] = [
     href: "/services/fundive-with-guide",
     image: "/gallery/fundive-1.JPG",
     imageAlt: "Guided fundive in Siquijor",
+    gallery: [
+      "/images/fundive/1.JPG",
+      "/images/fundive/2.png",
+      "/images/fundive/3.png",
+      "/images/fundive/4.png",
+      "/images/fundive/5.jpg",
+      "/images/fundive/6.jpg",
+      "/images/fundive/7.jpg",
+      "/images/fundive/8.jpg",
+      "/images/fundive/9.jpg",
+      "/images/fundive/10.jpg",
+      "/images/fundive/11.JPG",
+      "/images/fundive/12.jpg",
+      "/images/fundive/13.png",
+      "/images/fundive/14.png",
+    ],
   },
   {
     slug: "line-training",
@@ -155,6 +177,14 @@ export const services: ServiceSummary[] = [
     href: "/services/line-training",
     image: "/gallery/line-training-1.png",
     imageAlt: "Freediving line training session",
+    gallery: [
+      "/images/linetraining/1.png",
+      "/images/linetraining/2.JPG",
+      "/images/linetraining/3.png",
+      "/images/linetraining/4.png",
+      "/images/linetraining/5.png",
+      "/images/linetraining/6.png",
+    ],
   },
   {
     slug: "courses",
