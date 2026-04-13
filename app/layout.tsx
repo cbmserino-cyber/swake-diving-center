@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description: site.description,
   keywords: [
-    	"freediving Siquijor",
+    "freediving Siquijor",
     "freediving Philippines",
     "Siquijor freediving",
     "intro to freediving Siquijor",
