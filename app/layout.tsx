@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "learn freediving Siquijor",
     "local freediving Siquijor",
     "local freediver Siquijor",  
-  ],
+    ],
   alternates: {
     canonical: "/",
   },
@@ -55,3 +55,17 @@ export const metadata: Metadata = {
     images: ["/gallery/fundive-1.JPG"],
   },
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="bg-slate-950">
+        <SiteLayout>{children}</SiteLayout>
+      </body>
+    </html>
+  );
+}
