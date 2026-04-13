@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import "./globals.css";
 import { SiteLayout } from "@/components/site-layout";
 import { site } from "@/lib/site-data";
@@ -18,17 +19,17 @@ export const metadata: Metadata = {
     "line training Siquijor",
     "fundive Siquijor",
     "local freedive shop Siquijor",
-    "local freediving center Siquijor",  
+    "local freediving center Siquijor",
     "guided fundive Siquijor",
     "freedive Siquijor",
     "discover freediving Siquijor",
     "freedive certification",
     "Molchanovs certification Siquijor",
-    "freediving certification Siquijor",  
+    "freediving certification Siquijor",
     "learn freediving Siquijor",
     "local freediving Siquijor",
-    "local freediver Siquijor",  
-    ],
+    "local freediver Siquijor",
+  ],
   alternates: {
     canonical: "/",
   },
