@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 type GalleryProps = {
   images: string[];
@@ -17,13 +17,13 @@ export function Gallery({ images }: GalleryProps) {
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
 
-  const showPrev = () => {
+  const showPrev = useCallback(() => {
     setActiveIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
+  }, [images.length]);
 
-  const showNext = () => {
+  const showNext = useCallback(() => {
     setActiveIndex((prev) => (prev + 1) % images.length);
-  };
+  }, [images.length]);
 
   useEffect(() => {
     if (!lightboxOpen) return;
@@ -41,7 +41,7 @@ export function Gallery({ images }: GalleryProps) {
       document.body.style.overflow = "";
       window.removeEventListener("keydown", onKeyDown);
     };
-  }, [lightboxOpen, images.length]);
+  }, [lightboxOpen, showNext, showPrev]);
 
   const onTouchStart = (clientX: number) => {
     touchStartX.current = clientX;
