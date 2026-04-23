@@ -79,7 +79,7 @@ const contactColors: Record<string, string> = {
 export const site = {
   name: "Swake Freedivers Siquijor",
   description:
-    "Local, safety-first freediving sessions in Siquijor for first-timers and experienced divers.",
+    "Freediving in Siquijor for first-timers and experienced divers.",
   legalName: "Swake Diving Center",
   baseUrl: "https://swakefreedivers.com",
   contact,
