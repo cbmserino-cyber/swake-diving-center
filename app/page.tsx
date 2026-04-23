@@ -15,11 +15,11 @@ export default function HomePage() {
           eyebrow=""
           title={
             <>
-              <span className="font-bold text-cyan-300">Local, safety-first freediving in{" "}</span>
+              <span className="font-bold text-cyan-300">Freediving in{" "}</span>
               <span className="font-bold text-[#F15A24]">Siquijor</span>
             </>
           }
-          description="Freediving in Siquijor for first-timers and experienced divers, with a focus on safety, comfort, technique, and steady progress."
+          description="for first-timers and experienced divers, with a focus on safety, comfort, technique, and steady progress."
         />
       </section>
 
