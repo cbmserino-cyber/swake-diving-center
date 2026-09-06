@@ -8,7 +8,7 @@ import { fundiveDetails } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Siquijor Fundive with Guide",
   description:
-    "Guided fundive sessions in Siquijor with local support and up to two dive sites.",
+    "Fundive sessions in Siquijor with local guide and up to two dive sites.",
   alternates: { canonical: "/services/fundive-with-guide" },
 };
 
@@ -46,8 +46,15 @@ export default function FundiveWithGuidePage() {
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5 text-sm leading-6 text-slate-300">
-              <p>Each session is planned based on actual conditions on the day.</p>
-              <p className="mt-3">Typical factors we consider:</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+                Good to know
+              </p>
+              <ul className="mt-3 space-y-2">
+                {fundiveDetails.notes.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <p className="mt-4">Typical factors we consider:</p>
               <ul className="mt-2 list-disc list-inside space-y-1">
                 <li>Current → site exposure matched to experience level</li>
                 <li>Visibility → clearer sites for intro and photo dives</li>
