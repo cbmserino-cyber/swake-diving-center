@@ -44,6 +44,12 @@ export default function IntroToFreedivingPage() {
             <DetailList title="Not included" items={introDetails.exclusions} />
           </div>
         </div>
+
+        {introDetails.notes.length > 0 && (
+          <div className="mt-6">
+            <DetailList title="Good to know" items={introDetails.notes} />
+          </div>
+        )}
       </section>
 
       <CtaStrip />
