@@ -443,7 +443,7 @@ export const team: TeamMember[] = [
     name: "John Lloyd Payla",
     role: "Fundive Guide",
     certification: "Molchanovs W2",
-    bio: "Short bio",
+    bio: "Started out just tagging along on dives at Tulapos Marine Sanctuary — 4 years in now. Aalso guides at Tulapos Marine Sanctuary. Outside diving: basketball and frisbee.",
     image: "/images/team/johnL.jpg",
   },
   {
