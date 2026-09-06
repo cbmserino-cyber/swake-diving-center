@@ -365,10 +365,11 @@ export const lineTrainingDetails: LineTrainingDetails = {
     "Small group setup: contact for current rate",
   ],
   inclusions: [
-    "Pre-session briefing and dive plan",
-    "Condition-based site selection",
-    "Supervised line dives",
-    "Technique feedback after rounds",
+    "Pre-dive planning & discussion",
+    "Stretching & warm-up",
+    "Safety and Rescue Protocol Review",
+    "Open Water Session: Up to 2–3 hours line dives",
+    "Post-dive feedback & debrief",
   ],
   exclusions: [
     "Environmental or cottage fees",
