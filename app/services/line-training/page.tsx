@@ -44,6 +44,12 @@ export default function LineTrainingPage() {
             <DetailList title="Not included" items={lineTrainingDetails.exclusions} />
           </div>
         </div>
+
+        {lineTrainingDetails.notes.length > 0 && (
+          <div className="mt-6">
+            <DetailList title="Good to know" items={lineTrainingDetails.notes} />
+          </div>
+        )}
       </section>
 
       <CtaStrip />
